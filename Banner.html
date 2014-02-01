@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="Styles.css" rel="stylesheet" media="screen">
+    <script src="modernizr-latest.js"></script>
+    <script type="text/javascript">
+
+    var imagesOnCanvas= new Array();
+    var canvasAspectRatio=3;
+    function canvasSupport ()
+    {
+         return Modernizr.canvas;
+    }
+
+
+        window.addEventListener("load", eventWindowLoaded, false);
+
+    function eventWindowLoaded ()
+    {
+            canvasApp();
+    }
+    window.addEventListener("resize", OnResizeHome, false);
+
+    function OnResizeHome()
+    {
+        canvas.width = window.innerWidth;
+        canvas.height =canvas.width/canvasAspectRatio;
+        canvasApp();
+    }
+    window.addEventListener("click",OnClickHome,false);
+
+    function OnClickHome(event)
+    {
+     var x=event.pageX;
+     var y=event.pageY;
+     var message="click"+ x.toString()+" "+ y.toString()+" event detected!"
+     var i=0;
+     while(i< imagesOnCanvas.length)
+     {   var img=imagesOnCanvas[i];
+         if(x>=img.positionOnX && x<=img.positionOnX+img.width
+                 && y>=img.positionOnY && y<=img.positionOnY+img.height)
+         {  window.removeEventListener("click",OnClickHome,false);
+             window.removeEventListener("resize",OnResizeHome,false);
+            // message+=" is in"+imagesOnCanvas[i].name.toString();
+            // alert(message);
+             if(img.name=="monkey.jpg")
+             {
+                monkeyHouse();
+             }
+             if(img.name=="penguin.jpg")
+             {
+                 penguinHouse();
+             }
+             if(img.name=="lion.jpg")
+             {
+                 lionHouse();
+             }
+         }
+         i++;
+     }
+     //alert(message);
+    }
+    var arrowBackToHome;
+    function monkeyHouse()
+    {   window.addEventListener("click",OnClickMonkeyHouse,false);
+        window.addEventListener("resize", OnResizeMonkeyHouse,false);
+        var canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.width/canvasAspectRatio;
+
+        context.fillStyle = "#ff0000";
+        context.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
+        displayPicture("WelcomeMonkey.png",387,111,3,3,1,1,0.05,0.05);
+        displayPicture("ArrowLeft.png",48,48,20,10,1,10,0.00,0.00);
+
+
+    }
+    function OnClickMonkeyHouse(event)
+    {
+        var x=event.pageX;
+        var y=event.pageY;
+        if(x>=arrowBackToHome.positionOnX && x<=arrowBackToHome.positionOnX+arrowBackToHome.width
+           &&y>=arrowBackToHome.positionOnY && y<=arrowBackToHome.positionOnY+arrowBackToHome.height)
+        {
+           window.removeEventListener("click", OnClickMonkeyHouse);
+            canvasApp();
+        }
+    }
+    function OnClickLionHouse(event)
+    {
+        var x=event.pageX;
+        var y=event.pageY;
+        if(x>=arrowBackToHome.positionOnX && x<=arrowBackToHome.positionOnX+arrowBackToHome.width
+           &&y>=arrowBackToHome.positionOnY && y<=arrowBackToHome.positionOnY+arrowBackToHome.height)
+        {
+           window.removeEventListener("click", OnClickLionHouse);
+            canvasApp();
+        }
+        if(x>=shapesGame.positionOnX && x<=shapesGame.positionOnX+shapesGame.width
+           &&y>=shapesGame.positionOnY && y<=shapesGame.positionOnY+shapesGame.height)
+        {
+          window.location="http://ddana.hostei.com/";  
+        }
+
+
+    }
+    
+    function OnResizeMonkeyHouse()
+    {
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.width/canvasAspectRatio;
+        monkeyHouse();
+    }
+    function penguinHouse()
+    {   window.addEventListener("click",OnClickMonkeyHouse,false); //will be uniqe for each "canvas". Not implemented now cause we have only the back arroow
+        window.addEventListener("resize", OnResizePenguinHouse,false);
+        var canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.width/canvasAspectRatio;
+
+        context.fillStyle = "#00A8C6";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        displayPicture("WelcomePenguin.png",739,37,1,5,1,1,0.05,0.05);
+        displayPicture("ArrowLeft.png",48,48,20,10,1,10,0.00,0.00);
+
+    }
+
+    function OnResizePenguinHouse()
+    {
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.width/canvasAspectRatio;
+        penguinHouse();
+    }
+
+    function lionHouse()
+    {   window.addEventListener("click",OnClickLionHouse,false);
+        window.addEventListener("resize", OnResizeLionHouse,false);
+
+        var canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.width/canvasAspectRatio;
+
+        context.fillStyle = " #8FBE00";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        displayPicture("WelcomeLion.png",749,37,1,5,1,1,0.05,0.05);
+        displayPicture("Shapes.jpg",1722,1210,4 ,3,1,2,0.05,0.05);
+        displayPicture("ArrowLeft.png",48,48,20,10,1,10,0.00,0.00);
+    }
+
+    function OnResizeLionHouse()
+    {
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.width/canvasAspectRatio;
+        lionHouse();
+    }
+
+
+    function canvasApp()
+    {   window.removeEventListener("click", OnClickMonkeyHouse, false); //trebuie sa dezactivam chestiile din Houses
+        window.removeEventListener("resize", OnResizeMonkeyHouse, false); //exact asa tre facut si pt click
+        window.removeEventListener("resize", OnResizePenguinHouse, false);
+        window.removeEventListener("resize", OnResizeLionHouse, false);
+
+        window.addEventListener("click",OnClickHome,false);
+        window.addEventListener("resize", OnResizeHome, false);
+
+        var canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.width/canvasAspectRatio;
+
+        /*context.fillStyle = "#ffffaa";
+        context.fillRect(0, 0, canvas.width, canvas.height);*/
+        displayPicture("background.jpg",1366,455,1,1,1,1,0,0);
+
+        displayPicture("penguin.jpg",380,269,3,2,2,1,0.05,0.05);
+        displayPicture("monkey.jpg",296,250,3,2,1,2,0.05,0.05);
+        displayPicture("lion.jpg",250,276,3,2,3,2,0.05,0.05);
+
+        if (!canvasSupport()) {
+            return;
+        }
+
+    }
+    function displayPicture(source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop)
+    {
+        this.width=width;
+        this.height=height;
+        this.gridColumns=gridColumns;
+        this.gridRows=gridRows;
+        this.gridColumn=gridColumn;
+        this.gridRow=gridRow;
+        this.gridMarginLeft=gridMarginLeft*window.innerWidth;
+        this.gridMarginTop=gridMarginTop*(window.innerWidth/canvasAspectRatio);
+
+        var availableWidth=window.innerWidth-2*this.gridMarginLeft;
+        var availableHeight=(window.innerWidth/canvasAspectRatio)-2*this.gridMarginTop;
+        var imageRatio=width/height;
+
+        //create the grid stuff
+        var cellWidth=availableWidth/parseFloat(gridColumns);
+        var cellHeight=availableHeight/parseFloat(gridRows);
+
+        if(cellHeight<height)
+        {
+            height=cellHeight;
+            width=imageRatio*height;
+        }
+        if(cellWidth<width)
+        {
+            width=cellWidth;
+            height=width/imageRatio;
+        }
+
+        var positionOnX=this.gridMarginLeft+(gridColumn-1)*cellWidth;
+        var positionOnY=this.gridMarginTop+(gridRow-1)*cellHeight;
+        var canvas = document.getElementById('canvas'),
+                context = canvas.getContext('2d');
+       /* if(source=="lion.jpg")
+        {context.fillStyle = "#000000";
+            context.font = "20px _sans";
+            context.textBaseline = "top";
+            context.fillText(positionOnY.toString(),50,10);
+            context.fillText(positionOnX.toString(),50,30);
+            context.fillText(cellWidth.toString(),50,50);
+            context.fillText(cellHeight.toString(),50,70);
+            context.fillText(width.toString(),50,90)
+            context.fillText(height.toString(),50,110);
+            context.fillText(window.innerHeight.toString(),50,130);
+            context.fillText(window.innerWidth.toString(),50,150);
+            //context.fillText(bla.toString(),50,170);
+        }*/
+
+        //center in cell on OX
+
+        var d=(cellWidth-width)/2;
+        positionOnX=positionOnX+d;
+
+
+        //display image
+
+        var canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d');
+        var imageToDisplay = new Image();
+        imageToDisplay.src = source;
+        imageToDisplay.id=source;
+        imageToDisplay.onload = function ()
+        {
+            context.drawImage(imageToDisplay, positionOnX,positionOnY,width,height);
+        }
+
+        if(source=="ArrowLeft.png")
+        {
+            arrowBackToHome=new CanvasImage(source,positionOnX,positionOnY,width,height);
+        }
+        else
+        if(source=="lion.jpg"||source=="monkey.jpg"||source=="penguin.jpg")
+        {
+        var img=new CanvasImage(source,positionOnX,positionOnY,width,height);
+        imagesOnCanvas.push(img);
+        }
+        if(source=="Shapes.jpg")
+        {
+            shapesGame=new CanvasImage(source, positionOnX, positionOnY, width, height);
+        }
+    }
+
+
+
+    function CanvasImage(name,positionOnX, positionOnY, width, height)
+    {   this.name=name;
+        this.positionOnX=positionOnX;
+        this.positionOnY=positionOnY;
+        this.width=width;
+        this.height=height;
+
+    }
+
+    function centerPictureOnYTop(pictureHeight)
+    {
+        var position=(window.innerHeight)/2-(pictureHeight);
+        return position;
+    }
+    function centerPictureOnX(pictureWidth)
+    {
+        var position=(window.innerWidth)/2-(pictureWidth/2);
+        return position;
+    }
+   </script>
+</head>
+<body>
+<canvas id="canvas"/>
+
+
+</body>
+</html>
