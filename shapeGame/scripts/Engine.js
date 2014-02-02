@@ -342,6 +342,8 @@ function displayPicture(canvasName,source, width, height, gridColumns, gridRows,
 
 function getShapeModel(shapeModel)
 {
+    clearArray(shapeModel);
+
     var settings = getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
     var square=new Square("canvas",settings.width,settings.height,settings.positionOnX, settings.positionOnY,"black","#FBB829");
     shapeModel.push(square);
@@ -367,6 +369,15 @@ function getShapeModel(shapeModel)
     rvSettings.positionOnX=settings.positionOnX+rvSettings.width;
     var vrectangle=new VRectangle("canvas",rvSettings.width,rvSettings.height,rvSettings.positionOnX, rvSettings.positionOnY,"black","#FBB829");
     shapeModel.push(vrectangle);
+}
+
+function centerText(message, canvas)
+{
+    var context=canvas.getContext("2d");
+    var metrics=context.measureText(message);
+    var messageSize=metrics.width;
+    return (canvas.width/2)-(messageSize/2);
+
 }
 
 

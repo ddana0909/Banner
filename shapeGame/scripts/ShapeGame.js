@@ -5,41 +5,39 @@
 //<reference path="scripts/engine.js"/>
 
 //window.addEventListener("load", eventWindowLoaded, false);
-function eventWindowLoaded()
-{  /* playInstructions();
-    var button=document.getElementById("instructions");
-    button.addEventListener("click", playInstructions,false);*/
+function eventWindowLoaded() {  /* playInstructions();
+ var button=document.getElementById("instructions");
+ button.addEventListener("click", playInstructions,false);*/
     shapeGame();
 }
 //window.addEventListener("resize", OnResize, false);
 
-function OnResize(canvasName)
-{
-    canvasInit(canvasName,2.5);
+function OnResize(canvasName) {
+    canvasInit(canvasName, 2.5);
     clearArray(shapeMenu);
     clearArray(shapeModel);
     shapeGame(canvasName);
 }
 
 var draggedShape;
-var shapeMenu=[];
-var shapeModel=[];
-
+var shapeMenu = [];
+var shapeModel = [];
 
 
 var targetX;
 var targetY;
-var easeAmount=0.45;
-var hit=false;
+var easeAmount = 0.45;
+var hit = false;
 var mouseX;
 var mouseY;
 var dragHoldX;
 var dragHoldY;
-var matchingAttempts=0;
+var matchingAttempts;
 var timer;
 
-function initShapeMenu(shapeMenu, canvasName)
-{
+function initShapeMenu(shapeMenu, canvasName) {
+    clearArray(shapeMenu);
+
     var settings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 50, 50, 4, 7);
     var square = new Square(canvasName, settings.width, settings.height, settings.positionOnX, settings.positionOnY, "black", "#8A9B0F");
     shapeMenu.push(square);
@@ -63,60 +61,93 @@ function initShapeMenu(shapeMenu, canvasName)
 }
 
 
-function shapeGame(canvasName)
-{   if(!canvasSupport())
+function shapeGame(canvasName) {
+    window.removeEventListener("click",BackToGames);
+    window.removeEventListener("click",OnClickMonkeyHouse);
+    window.removeEventListener("click",OnClickHome);
+
+    matchingAttempts=0;
+    if (!canvasSupport())
         return;
 
-    canvasInit(canvasName,2.5);
-  //  if(arguments.callee.caller.name!="OnResize")
+    canvasInit(canvasName, 2.5);
+    // if(arguments.callee.caller.name!="OnResize")
     {
-         initShapeMenu(shapeMenu, canvasName);
-         getShapeModel(shapeModel);
+        initShapeMenu(shapeMenu, canvasName);
+        getShapeModel(shapeModel);
     }
     drawShapeArray(shapeMenu);
     drawShapeArray(shapeModel);
 
-    displayPicture(canvasName,"shapeGame/images/lionface.png",792,1009,15,4,1,4,0.01,0.01);
-    var canvas= document.getElementById(canvasName);
-    canvas.addEventListener("mousedown",mouseDownEvent,false);
+    displayPicture(canvasName, "shapeGame/images/lionface.png", 792, 1009, 15, 4, 1, 4, 0.01, 0.01);
+
+    displayMenuPicture("arrowLeft.png", 48, 48, 20, 10, 1, 1, 0.00, 0.00);
+
+
+    var canvas = document.getElementById(canvasName);
+    canvas.addEventListener("mousedown", mouseDownEvent, false);
+
 }
+
 
 function gameOver()
 {
-    if((!winGame())&&matchingAttempts==shapeModel.length)
+    if ((!winGame()) && matchingAttempts - 1 == shapeModel.length)
         return true;
 }
 function winGame()
 {
     var shape;
-    for(shape in shapeModel)
+    for (shape in shapeModel)
     {
-        if(shapeModel[shape].fillColor!="#8A9B0F")
-        return false;
+        if (shapeModel[shape].fillColor != "#8A9B0F")
+            return false;
     }
     return true;
 }
 
-function mouseDownEvent(event)
-{   var shapeIndex;
-    mouseX=event.pageX;
-    mouseY=event.pageY;
-    for(var i=0;i<shapeMenu.length;i++)
+function mouseDownEvent(event) {
+    var x = event.pageX;
+    var y = event.pageY;
+    if (x >= arrowBackToHome.positionOnX && x <= arrowBackToHome.positionOnX + arrowBackToHome.width
+        && y >= arrowBackToHome.positionOnY && y <= arrowBackToHome.positionOnY + arrowBackToHome.height)
     {
-        if(shapeMenu[i].isPointInside(event.pageX,event.pageY))
+
+        window.removeEventListener("mousedown", mouseDownEvent);
+        window.removeEventListener("mousemove", mouseMoveEvent);
+        window.removeEventListener("mouseup", mouseUpEvent);
+        window.removeEventListener("click",OnClickHome);
+
+        monkeyHouse();
+        return;
+    }
+
+
+    var shapeIndex;
+    mouseX = event.pageX;
+    mouseY = event.pageY;
+    for (var i = 0; i < shapeMenu.length; i++)
+    {
+        if (shapeMenu[i].isPointInside(event.pageX, event.pageY))
         {
-            hit=true;
-            shapeIndex=i;
+            hit = true;
+            shapeIndex = i;
             break;
         }
     }
-    if(hit)
-    {  window.addEventListener("mousemove",mouseMoveEvent,false);
-        var selectedShape=shapeMenu[shapeIndex]; //select
-        draggedShape=shapeMenu[shapeIndex];
-        shapeMenu.splice(shapeIndex,1);                            //delete
-        shapeMenu.unshift(selectedShape);
 
+    if (hit)
+    {
+        matchingAttempts++;
+        window.addEventListener("mousemove", mouseMoveEvent, false);
+
+        window.removeEventListener("mousedown", mouseDownEvent, false);
+        window.addEventListener("mouseup", mouseUpEvent, false);
+
+        var selectedShape = shapeMenu[shapeIndex]; //select
+        draggedShape = shapeMenu[shapeIndex];
+        shapeMenu.splice(shapeIndex, 1);                            //delete
+        shapeMenu.unshift(selectedShape);
 
 
         dragHoldX = mouseX - draggedShape.positionOnX;
@@ -125,169 +156,216 @@ function mouseDownEvent(event)
         targetX = draggedShape.positionOnX;
         targetY = draggedShape.positionOnY;
 
-        timer=setInterval(onTimerTick, 1000/30);
+        timer = setInterval(onTimerTick, 1000 / 30);
 
     }
 
-        window.removeEventListener("mousedown",mouseDownEvent,false);
-        window.addEventListener("mouseup",mouseUpEvent,false);
+
 }
 
-function onTimerTick() {
+function onTimerTick()
+{
 
-    draggedShape.move(draggedShape.positionOnX+easeAmount*(targetX-draggedShape.positionOnX),draggedShape.positionOnY+easeAmount*(targetY-draggedShape.positionOnY));
+    draggedShape.move(draggedShape.positionOnX + easeAmount * (targetX - draggedShape.positionOnX), draggedShape.positionOnY + easeAmount * (targetY - draggedShape.positionOnY));
 
-    if ((!hit)&&(Math.abs(draggedShape.positionOnX - targetX) < 0.1) && (Math.abs(draggedShape.positionOnY - targetY) < 0.1)) {
+    if ((!hit) && (Math.abs(draggedShape.positionOnX - targetX) < 0.1) && (Math.abs(draggedShape.positionOnY - targetY) < 0.1))
+    {
         draggedShape.move(targetX, targetY);
         clearInterval(timer);
     }
     drawScreen();
 }
 
-function drawScreen()
+function BackToGames(event)
 {
-
-    if(gameOver() || winGame())
-    { var context=getCanvasContext("canvas");
-        if(gameOver())
-        {  context.clearRect(0,0,canvas.width,canvas.height);
-
-            displayPicture("canvas","shapeGame/images/lose.jpg",197,164,1,1,1,1,0.05,0.05);
-            context.fillStyle = "#000000";
-            context.font = "40px _sans";
-            context.textBaseline = "top";
-
-            //center your message
-            var message="GAME OVER!!!"
-            var position=centerText(message);
-            context.fillText(message,position,50);
-            //window.instructions.style.visibility="hidden";
-        }
-        if(winGame())
-        {  context.clearRect(0,0,canvas.width,canvas.height);
-
-            displayPicture("canvas","shapeGame/images/win.jpg",288,175,1,1,1,1,0.05,0.05);
-
-            context.fillStyle = "#000000";
-            context.font = "40px _sans";
-            context.textBaseline = "top";
-
-            //center your message
-            var message="Well done!!!"
-            var position=centerText(message);
-            context.fillText(message,position,50);
-            //window.instructions.style.visibility="hidden";
-        }
-    }
-        else
-        {
-            context=getCanvasContext("canvas");
-            context.clearRect(100,0, canvas.width-100, canvas.height);//setge chestiile dinainte
-            drawShapeArray(shapeMenu);
-            drawShapeArray(shapeModel);
-
-            if(hit==true)
-                draggedShape.draw();
-        }
-
-    function centerText(message)
+    var x = event.pageX;
+    var y = event.pageY;
+    if (x >= arrowBackToHome.positionOnX && x <= arrowBackToHome.positionOnX + arrowBackToHome.width
+        && y >= arrowBackToHome.positionOnY && y <= arrowBackToHome.positionOnY + arrowBackToHome.height)
     {
-        var metrics=context.measureText(message);
-        var messageSize=metrics.width;
-        var position=(canvas.width/2)-(messageSize/2);
-        return position;
+        window.removeEventListener("click",BackToGames);
+
+        shapeGame("canvas");
     }
 }
 
+function gameOverScreen(context, canvas)
+{
+
+    window.removeEventListener("click",OnClickMonkeyHouse);
+    window.removeEventListener("click",OnClickLionHouse);
+    window.removeEventListener("mousedown",mouseDownEvent);
+    window.removeEventListener("click",OnClickHome);
+
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    displayPicture("canvas", "shapeGame/images/lose.jpg", 197, 164, 1, 1, 1, 1, 0.05, 0.05);
+    displayMenuPicture("arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
+
+    context.fillStyle = "#000000";
+    context.font = "40px _sans";
+    context.textBaseline = "top";
+
+    var message = "GAME OVER!!!";
+    var position = centerText(message, canvas);
+    context.fillText(message, position, 50);
+
+    //window.removeEventListener("click",OnClickMonkeyHouse);
+    window.addEventListener("click",BackToGames,false);
+    //window.instructions.style.visibility="hidden";
+
+}
+function winScreen(context, canvas)
+{
+
+    window.removeEventListener("click",OnClickMonkeyHouse);
+    window.removeEventListener("click",OnClickLionHouse);
+    window.removeEventListener("mousedown",mouseDownEvent);
+    window.removeEventListener("click",OnClickHome);
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    displayPicture("canvas", "shapeGame/images/win.jpg", 288, 175, 1, 1, 1, 1, 0.05, 0.05);
+    displayMenuPicture("arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
+
+    context.fillStyle = "#000000";
+    context.font = "40px _sans";
+    context.textBaseline = "top";
+
+    var message = "Well done!!!";
+    var position = centerText(message, canvas);
+    context.fillText(message, position, 50);
+    window.addEventListener("click",BackToGames,false);
+    //window.instructions.style.visibility="hidden";
+}
+function drawScreen()
+{
+    var canvas = document.getElementById("canvas");
+    if (gameOver() || winGame()) {
+        var context = getCanvasContext("canvas");
+        if (gameOver())
+        {
+            gameOverScreen(context, canvas);
+            window.clearTimeout(timer);
+            return;
+
+        }
+        if (winGame())
+        {
+            winScreen(context, canvas);
+            window.clearTimeout(timer);
+            return;
+        }
+    }
+    else
+    {
+        context = getCanvasContext("canvas");
+        context.clearRect(100, 0, canvas.width - 100, canvas.height);//setge chestiile dinainte
+        drawShapeArray(shapeMenu);
+        drawShapeArray(shapeModel);
+
+        if (hit == true)
+            draggedShape.draw();
+    }
+
+
+}
+
 function mouseMoveEvent(event)
+{
+    var canvas = document.getElementById("canvas");
+    var posX;
+    var posY;
+    var shapeRad = draggedShape.width;
+    var minX = shapeRad;
+    var maxX = canvas.width - shapeRad;
+    var minY = shapeRad;
+    var maxY = canvas.height - shapeRad;
+
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+
+    posX = mouseX - dragHoldX;
+    posX = (posX < minX) ? minX : ((posX > maxX) ? maxX : posX);
+    posY = mouseY - dragHoldY;
+    posY = (posY < minY) ? minY : ((posY > maxY) ? maxY : posY);
+
+    targetX = posX;
+    targetY = posY;
+
+}
+
+function mouseUpEvent(event) {
+    window.removeEventListener("mousemove", mouseMoveEvent, false);
+
+    var nrMatch = 0;
+    var match = false;
+    var shapeIndex = [];
+    var indexOfMin = 0;
+
+    hit = false;
+
+    for (var i = 0; i < shapeModel.length; i++)
     {
-            var posX;
-            var posY;
-            var shapeRad = draggedShape.width;
-            var minX = shapeRad;
-            var maxX = canvas.width - shapeRad;
-            var minY = shapeRad;
-            var maxY = canvas.height - shapeRad;
-
-            mouseX=event.clientX;
-            mouseY=event.clientY;
-
-            posX = mouseX - dragHoldX;
-            posX = (posX < minX) ? minX : ((posX > maxX) ? maxX : posX);
-            posY = mouseY - dragHoldY;
-            posY = (posY < minY) ? minY : ((posY > maxY) ? maxY : posY);
-
-            targetX = posX;
-            targetY = posY;
-
+        if (shapeModel[i].isPointInside(event.pageX, event.pageY))
+        {
+            nrMatch++;
+            shapeIndex.push(i);
+        }
     }
 
-function mouseUpEvent(event)
+    if (nrMatch > 1)
     {
-        canvas.removeEventListener("mousemove",mouseMoveEvent,false);
+        var minSize = 999 * 999;
 
-        var nrMatch=0;
-        var match=false;
-        var shapeIndex=[];
-        var indexOfMin=0;
-        matchingAttempts++;
-        hit=false;
-
-        for(var i=0;i<shapeModel.length;i++)
+        for (var j in shapeIndex)
         {
-            if(shapeModel[i].isPointInside(event.pageX,event.pageY))
+            var indexInShapeModel = shapeIndex[j];
+            if (shapeModel[indexInShapeModel].area() < minSize)
             {
-                nrMatch++;
-                shapeIndex.push(i);
+                minSize = shapeModel[indexInShapeModel].area();
+                indexOfMin = indexInShapeModel;
             }
         }
-
-        if(nrMatch>1)
-        {
-           var minSize=999*999;
-
-           for( var j in shapeIndex)
-            {  var indexInShapeModel=shapeIndex[j];
-                if (shapeModel[indexInShapeModel].area() < minSize)
-                {
-                    minSize = shapeModel[indexInShapeModel].area();
-                    indexOfMin = indexInShapeModel;
-                }
-            }
-           if(getObjectType(shapeModel[indexOfMin])==getObjectType(draggedShape))
-                match=true;
-
-        }
-        if(nrMatch==1)
-            if(getObjectType(shapeModel[shapeIndex[0]])==getObjectType(draggedShape))
-            {
-             match=true;
-             indexOfMin=shapeIndex[0];
-            }
-
-        if(match)
-        {
-
-        shapeModel[indexOfMin].fillColor=draggedShape.fillColor;
-
-        }
-        shapeMenu.splice(0,1);
-        if(gameOver())
-        {drawScreen();
-
-            window.removeEventListener("mousedown",mouseDownEvent,false);
-        }
-        else
-            if(winGame())
-            {
-                drawScreen();
-
-                window.removeEventListener("mousedown",mouseDownEvent,false);
-            }
+        if (getObjectType(shapeModel[indexOfMin]) == getObjectType(draggedShape))
+            match = true;
 
     }
+    if (nrMatch == 1)
+        if (getObjectType(shapeModel[shapeIndex[0]]) == getObjectType(draggedShape))
+        {
+            match = true;
+            indexOfMin = shapeIndex[0];
+        }
 
-function playSound() {
+    if (match)
+    {
+
+        shapeModel[indexOfMin].fillColor = draggedShape.fillColor;
+
+    }
+    shapeMenu.splice(0, 1);
+    if (gameOver())
+    {
+        drawScreen();
+
+        window.removeEventListener("mousedown", mouseDownEvent, false);
+    }
+    else if (winGame())
+    {
+        drawScreen();
+
+        window.removeEventListener("mousedown", mouseDownEvent, false);
+    }
+    else
+        drawScreen();
+
+
+}
+
+function playSound()
+{
     var snd = new Audio("sounds/doorbell.wav"); // buffers automatically when created
     snd.play();
 }
