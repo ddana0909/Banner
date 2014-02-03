@@ -174,6 +174,7 @@ function onTimerTick()
         clearInterval(timer);
     }
     drawScreen();
+
 }
 
 function BackToGames(event)
@@ -186,16 +187,17 @@ function BackToGames(event)
         window.removeEventListener("click",BackToGames);
 
         shapeGame("canvas");
+
     }
 }
 
 function gameOverScreen(context, canvas)
 {
 
-    window.removeEventListener("click",OnClickMonkeyHouse);
-    window.removeEventListener("click",OnClickLionHouse);
-    window.removeEventListener("mousedown",mouseDownEvent);
-    window.removeEventListener("click",OnClickHome);
+    window.removeEventListener("click",OnClickMonkeyHouse,false);
+    window.removeEventListener("click",OnClickLionHouse,false);
+    window.removeEventListener("mousedown",mouseDownEvent,false);
+    window.removeEventListener("click",OnClickHome,false);
 
 
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -219,10 +221,10 @@ function gameOverScreen(context, canvas)
 function winScreen(context, canvas)
 {
 
-    window.removeEventListener("click",OnClickMonkeyHouse);
-    window.removeEventListener("click",OnClickLionHouse);
-    window.removeEventListener("mousedown",mouseDownEvent);
-    window.removeEventListener("click",OnClickHome);
+    window.removeEventListener("click",OnClickMonkeyHouse,false);
+    window.removeEventListener("click",OnClickLionHouse,false);
+    window.removeEventListener("mousedown",mouseDownEvent,false);
+    window.removeEventListener("click",OnClickHome,false);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -351,15 +353,22 @@ function mouseUpEvent(event) {
         drawScreen();
 
         window.removeEventListener("mousedown", mouseDownEvent, false);
+        return;
     }
     else if (winGame())
     {
         drawScreen();
 
         window.removeEventListener("mousedown", mouseDownEvent, false);
+        return;
     }
     else
-        drawScreen();
+        {
+            drawScreen();
+            return;
+        }
+
+    return;
 
 
 }
