@@ -76,7 +76,7 @@ function shapeGame(canvasName) {
         return;
 
     canvasInit(canvasName, 2.5);
-    // if(arguments.callee.caller.name!="OnResize")
+
     {
         initShapeMenu(shapeMenu, canvasName);
         getShapeModel(shapeModel);
