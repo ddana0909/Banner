@@ -380,5 +380,16 @@ function centerText(message, canvas)
 
 }
 
+function writeText(message,positionOnX,fontSize)
+{
+    var canvas = document.getElementById("canvas");
+    var context = getCanvasContext("canvas");
+    context.fillStyle = "#000000";
+    context.font = fontSize +"px _sans";
+    context.textBaseline = "top";
 
+    var position = centerText(message, canvas);
+
+    context.fillText(message, position, positionOnX);
+}
 

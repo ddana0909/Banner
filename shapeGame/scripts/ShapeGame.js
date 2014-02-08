@@ -5,14 +5,16 @@
 //<reference path="scripts/engine.js"/>
 
 //window.addEventListener("load", eventWindowLoaded, false);
-function eventWindowLoaded() {  /* playInstructions();
+function eventWindowLoaded()
+{  /* playInstructions();
  var button=document.getElementById("instructions");
  button.addEventListener("click", playInstructions,false);*/
     shapeGame();
 }
 //window.addEventListener("resize", OnResize, false);
 
-function OnResize(canvasName) {
+function OnResize(canvasName)
+{
     canvasInit(canvasName, 2.5);
     clearArray(shapeMenu);
     clearArray(shapeModel);
@@ -22,7 +24,8 @@ function OnResize(canvasName) {
 var draggedShape;
 var shapeMenu = [];
 var shapeModel = [];
-
+var score=0;
+var scoreIncreaseAmount=20;
 
 var targetX;
 var targetY;
@@ -66,7 +69,9 @@ function shapeGame(canvasName) {
     window.removeEventListener("click",OnClickMonkeyHouse);
     window.removeEventListener("click",OnClickHome);
 
+    score=0;
     matchingAttempts=0;
+
     if (!canvasSupport())
         return;
 
@@ -88,7 +93,6 @@ function shapeGame(canvasName) {
     canvas.addEventListener("mousedown", mouseDownEvent, false);
 
 }
-
 
 function gameOver()
 {
@@ -187,6 +191,7 @@ function BackToGames(event)
         window.removeEventListener("click",BackToGames);
 
         shapeGame("canvas");
+        return;
 
     }
 }
@@ -205,13 +210,12 @@ function gameOverScreen(context, canvas)
     displayPicture("canvas", "shapeGame/images/lose.jpg", 197, 164, 1, 1, 1, 1, 0.05, 0.05);
     displayMenuPicture("arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
 
-    context.fillStyle = "#000000";
-    context.font = "40px _sans";
-    context.textBaseline = "top";
 
     var message = "GAME OVER!!!";
-    var position = centerText(message, canvas);
-    context.fillText(message, position, 50);
+    writeText(message,50,40);
+    writeText(score,100,40);
+
+    displayPicture("canvas","shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05);
 
     //window.removeEventListener("click",OnClickMonkeyHouse);
     window.addEventListener("click",BackToGames,false);
@@ -231,39 +235,42 @@ function winScreen(context, canvas)
     displayPicture("canvas", "shapeGame/images/win.jpg", 288, 175, 1, 1, 1, 1, 0.05, 0.05);
     displayMenuPicture("arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
 
-    context.fillStyle = "#000000";
-    context.font = "40px _sans";
-    context.textBaseline = "top";
+
 
     var message = "Well done!!!";
-    var position = centerText(message, canvas);
-    context.fillText(message, position, 50);
+    writeText(message,50,40);
+    writeText(score,100,40);
+    displayPicture("canvas","shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05);
     window.addEventListener("click",BackToGames,false);
     //window.instructions.style.visibility="hidden";
 }
-function drawScreen()
-{
+
+function drawScreen() {
     var canvas = document.getElementById("canvas");
+
+
+
     if (gameOver() || winGame()) {
         var context = getCanvasContext("canvas");
-        if (gameOver())
-        {
-            gameOverScreen(context, canvas);
+        if (gameOver()) {
             window.clearTimeout(timer);
+            gameOverScreen(context, canvas);
             return;
 
         }
         if (winGame())
         {
-            winScreen(context, canvas);
             window.clearTimeout(timer);
+            winScreen(context, canvas);
             return;
         }
     }
-    else
-    {
+    else {
         context = getCanvasContext("canvas");
-        context.clearRect(100, 0, canvas.width - 100, canvas.height);//setge chestiile dinainte
+        context.clearRect(115, 0, canvas.width - 115, canvas.height);
+
+        var message = "SCORE: " + score;
+        writeText(message,50,20);
         drawShapeArray(shapeMenu);
         drawShapeArray(shapeModel);
 
@@ -345,6 +352,7 @@ function mouseUpEvent(event) {
     {
 
         shapeModel[indexOfMin].fillColor = draggedShape.fillColor;
+        score+=scoreIncreaseAmount;
 
     }
     shapeMenu.splice(0, 1);
