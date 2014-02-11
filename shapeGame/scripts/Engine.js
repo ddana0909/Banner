@@ -237,12 +237,12 @@ Square.prototype=new Rectangle();
 function VRectangle(canvasName,width, height, positionX, positionY,color,fillColor)
 {
     if(height<width) //daca nu e vertical
-         {
-          var aux=height;
-          height=width;
-          width=aux;
-         }
-        Rectangle.call(this,canvasName,width, height, positionX, positionY,color,fillColor);
+    {
+        var aux=height;
+        height=width;
+        width=aux;
+    }
+    Rectangle.call(this,canvasName,width, height, positionX, positionY,color,fillColor);
 }
 VRectangle.prototype=new Rectangle();
 
@@ -320,7 +320,7 @@ function getSettingsForGrid( canvasName,gridMarginLeft,gridMarginTop, gridColumn
     return {height: height, width: width, positionOnX: positionOnX, positionOnY: positionOnY};
 }
 
-function displayPicture(canvasName,source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop)
+function displayPicture(canvasName,source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop,shiftOnX)
 {
     var context = getCanvasContext(canvasName);
 
@@ -329,7 +329,10 @@ function displayPicture(canvasName,source, width, height, gridColumns, gridRows,
     width = __ret.width;
     var positionOnX = __ret.positionOnX;
     var positionOnY = __ret.positionOnY;
-
+    if(shiftOnX)
+    {
+        positionOnX+=shiftOnX;
+    }
     //display imag
     var imageToDisplay = new Image();
     imageToDisplay.src = source;

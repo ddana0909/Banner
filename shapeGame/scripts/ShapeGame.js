@@ -4,6 +4,7 @@
 
 //<reference path="scripts/engine.js"/>
 
+
 //window.addEventListener("load", eventWindowLoaded, false);
 function eventWindowLoaded()
 {  /* playInstructions();
@@ -38,6 +39,22 @@ var dragHoldY;
 var matchingAttempts;
 var timer;
 
+var shapeSounds=[];
+
+function initShapeSounds()
+{
+    var square = new Audio("shapeGame/sounds/doorbell.wav");
+    //shapeSounds.push(square);
+    var circle = new Audio("shapeGame/sounds/doorbell.wav");
+    // shapeSounds.push(circle);
+    var triangle = new Audio("shapeGame/sounds/doorbell.wav");
+
+    var vrect= new Audio("shapeGame/sounds/doorbell.wav");
+    var rect=new Audio("shapeGame/sounds/doorbell.wav");
+    shapeSounds.push(square,circle,triangle,vrect,rect);
+
+}
+
 function initShapeMenu(shapeMenu, canvasName) {
     clearArray(shapeMenu);
 
@@ -65,18 +82,24 @@ function initShapeMenu(shapeMenu, canvasName) {
 
 
 function shapeGame(canvasName) {
-    window.removeEventListener("click",BackToGames);
-    window.removeEventListener("click",OnClickMonkeyHouse);
-    window.removeEventListener("click",OnClickHome);
+    window.removeEventListener("click",BackToGames,false);
+    window.removeEventListener("click",OnClickMonkeyHouse,false);
+    window.removeEventListener("click",OnClickHome,false);
 
     score=0;
     matchingAttempts=0;
+    var snd = new Audio("shapeGame/sounds/doorbell.wav"); // buffers automatically when created
+    snd.play();
+
+    initShapeSounds();
+
+    //window.addEventListener("mouseover",mouseOverSounds,false);
 
     if (!canvasSupport())
         return;
 
     canvasInit(canvasName, 2.5);
-
+    // if(arguments.callee.caller.name!="OnResize")
     {
         initShapeMenu(shapeMenu, canvasName);
         getShapeModel(shapeModel);
@@ -92,6 +115,19 @@ function shapeGame(canvasName) {
     var canvas = document.getElementById(canvasName);
     canvas.addEventListener("mousedown", mouseDownEvent, false);
 
+}
+
+function mouseOverSounds(event)
+{
+    var x=event.pageX;
+    var y= event.pageY;
+    for ( var index in shapeMenu)
+    {if(shapeMenu[index].isPointInside(x,y))
+        if(getObjectType(shapeMenu[index])=="Square")
+        {alert('mouse over square');
+
+        }
+    }
 }
 
 function gameOver()
@@ -135,6 +171,36 @@ function mouseDownEvent(event) {
         if (shapeMenu[i].isPointInside(event.pageX, event.pageY))
         {
             hit = true;
+            switch (getObjectType(shapeMenu[i]))
+
+            {
+                case "Square":
+                {
+                    shapeSounds[0].play();
+                    break;
+                }
+                case "Circle":
+                {
+                    shapeSounds[1].play();
+                    break;
+                }
+                case "Triangle":
+                {
+                    shapeSounds[2].play();
+                    break;
+                }
+                case "VRectangle":
+                {
+                    shapeSounds[3].play();
+                    break;
+                }
+                case "Rectangle":
+                {
+                    shapeSounds[4].play();
+                    break;
+                };
+
+            }
             shapeIndex = i;
             break;
         }
@@ -213,9 +279,11 @@ function gameOverScreen(context, canvas)
 
     var message = "GAME OVER!!!";
     writeText(message,50,40);
-    writeText(score,100,40);
+    writeText(score,120,40);
 
-    displayPicture("canvas","shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05);
+    updateScore(score);
+
+    displayPicture("canvas","shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05,45);
 
     //window.removeEventListener("click",OnClickMonkeyHouse);
     window.addEventListener("click",BackToGames,false);
@@ -230,7 +298,9 @@ function winScreen(context, canvas)
     window.removeEventListener("mousedown",mouseDownEvent,false);
     window.removeEventListener("click",OnClickHome,false);
 
+
     context.clearRect(0, 0, canvas.width, canvas.height);
+
 
     displayPicture("canvas", "shapeGame/images/win.jpg", 288, 175, 1, 1, 1, 1, 0.05, 0.05);
     displayMenuPicture("arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
@@ -240,7 +310,10 @@ function winScreen(context, canvas)
     var message = "Well done!!!";
     writeText(message,50,40);
     writeText(score,100,40);
-    displayPicture("canvas","shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05);
+
+    updateScore(score);
+
+    displayPicture("canvas","shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05,45);
     window.addEventListener("click",BackToGames,false);
     //window.instructions.style.visibility="hidden";
 }
@@ -371,10 +444,10 @@ function mouseUpEvent(event) {
         return;
     }
     else
-        {
-            drawScreen();
-            return;
-        }
+    {
+        drawScreen();
+        return;
+    }
 
     return;
 
@@ -391,6 +464,5 @@ function playInstructions()
     var snd = new Audio("sounds/doorbell.wav"); // buffers automatically when created
     snd.play();
 }
-
 
 

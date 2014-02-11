@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39cd7bd8-ca53-4e33-8daa-cc740a2f354d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/igloo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lionHouse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lionsSign.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkeyHouse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkeySign.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/palm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/penguin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/penguinSign.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/savannahTree.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic.js" afterPath="$PROJECT_DIR$/basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.js" afterPath="$PROJECT_DIR$/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeGame/scripts/Engine.js" afterPath="$PROJECT_DIR$/shapeGame/scripts/Engine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" afterPath="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Banner Prototype.iws" />
@@ -96,7 +84,7 @@
       <file leaf-file-name="ShapeGame.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="34" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="6834">
+            <state line="466" column="0" selection-start="12565" selection-end="12565" vertical-scroll-proportion="0.0" vertical-offset="7421" max-vertical-offset="8058">
               <folding />
             </state>
           </provider>
@@ -105,7 +93,7 @@
       <file leaf-file-name="Engine.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="383" column="1" selection-start="10850" selection-end="10850" vertical-scroll-proportion="0.0" vertical-offset="6180" max-vertical-offset="6817">
+            <state line="14" column="1" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="6868">
               <folding />
             </state>
           </provider>
@@ -139,10 +127,10 @@
         <option value="$PROJECT_DIR$/penguinHouse.js" />
         <option value="$PROJECT_DIR$/dragging_game/Scripts/Dragging_Java_script.js" />
         <option value="$PROJECT_DIR$/banner.html" />
-        <option value="$PROJECT_DIR$/shapeGame/scripts/Engine.js" />
-        <option value="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" />
         <option value="$PROJECT_DIR$/home.js" />
         <option value="$PROJECT_DIR$/basic.js" />
+        <option value="$PROJECT_DIR$/shapeGame/scripts/Engine.js" />
+        <option value="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" />
       </list>
     </option>
   </component>
@@ -216,6 +204,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,7 +337,11 @@
       <created>1392155773461</created>
       <updated>1392155773461</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="banner with graphics">
+      <created>1392156121512</created>
+      <updated>1392156121512</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -384,7 +390,8 @@
     <MESSAGE value="score" />
     <MESSAGE value="score&#10;" />
     <MESSAGE value="test commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit&#10;" />
+    <MESSAGE value="banner with graphics" />
+    <option name="LAST_COMMIT_MESSAGE" value="banner with graphics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -669,23 +676,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="383" column="1" selection-start="10850" selection-end="10850" vertical-scroll-proportion="0.0" vertical-offset="6180" max-vertical-offset="6817">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/penguinHouse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="67" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="34" selection-start="2610" selection-end="2610" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="6834">
           <folding />
         </state>
       </provider>
@@ -714,6 +707,20 @@
     <entry file="file://$PROJECT_DIR$/basic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="6868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="466" column="0" selection-start="12565" selection-end="12565" vertical-scroll-proportion="0.0" vertical-offset="7421" max-vertical-offset="8058">
           <folding />
         </state>
       </provider>
