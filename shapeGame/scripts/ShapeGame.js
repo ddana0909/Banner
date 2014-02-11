@@ -465,4 +465,12 @@ function playInstructions()
     snd.play();
 }
 
+function updateScore(score)
+{
+    $.ajax({
+        type: "POST",
+        url: 'shapeGame/php/score.php',
+        data: {score: score}
 
+    });
+}
