@@ -26,6 +26,7 @@ function monkeyHouse()
     displayMenuPicture("shapes.jpg",1722,1210,4 ,3,1,2,0.05,0.05);
     displayMenuPicture("arrowLeft.png",48,48,20,10,1,10,0.00,0.00);
 
+
 }
 
 function OnClickMonkeyHouse(event)

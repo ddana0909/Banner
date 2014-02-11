@@ -53,7 +53,7 @@ function playSound()
 {
     while(this.repeat)
     {
-        var snd = new Audio(source); // buffers automatically when created
+        var snd = new Audio(source);
         snd.play();
         this.repeat--;
     }
@@ -83,12 +83,10 @@ Rectangle.prototype.area=areaRectangle;
 Rectangle.prototype.isPointInside = function (x, y)
 {
     if (x < this.positionOnX || x > this.positionOnX + this.width) {
-        //alert("x"+x.toString()+" "+ y.toString()+" "+this.positionX.toString()+" "+(this.positionX+this.width).toString());
-        return false;
+                return false;
     }
     if (y < this.positionOnY || y > this.positionOnY + this.height) {
-        //alert("y"+x.toString()+" "+ y.toString()+" "+this.positionY.toString()+" "+(this.positionY+this.height).toString());
-        return false;
+                return false;
     }
 
     return true;
@@ -236,7 +234,7 @@ Square.prototype=new Rectangle();
 
 function VRectangle(canvasName,width, height, positionX, positionY,color,fillColor)
 {
-    if(height<width) //daca nu e vertical
+    if(height<width)
     {
         var aux=height;
         height=width;

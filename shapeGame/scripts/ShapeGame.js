@@ -4,22 +4,13 @@
 
 //<reference path="scripts/engine.js"/>
 
-
-//window.addEventListener("load", eventWindowLoaded, false);
-function eventWindowLoaded()
-{  /* playInstructions();
- var button=document.getElementById("instructions");
- button.addEventListener("click", playInstructions,false);*/
-    shapeGame();
-}
-//window.addEventListener("resize", OnResize, false);
-
-function OnResize(canvasName)
+function OnResize()
 {
-    canvasInit(canvasName, 2.5);
+    canvasInit("canvas", 2.5);
     clearArray(shapeMenu);
     clearArray(shapeModel);
-    shapeGame(canvasName);
+    shapeGame("canvas");
+    return;
 }
 
 var draggedShape;
@@ -44,14 +35,12 @@ var shapeSounds=[];
 function initShapeSounds()
 {
     var square = new Audio("shapeGame/sounds/doorbell.wav");
-    //shapeSounds.push(square);
     var circle = new Audio("shapeGame/sounds/doorbell.wav");
-    // shapeSounds.push(circle);
     var triangle = new Audio("shapeGame/sounds/doorbell.wav");
-
-    var vrect= new Audio("shapeGame/sounds/doorbell.wav");
+    var vRect= new Audio("shapeGame/sounds/doorbell.wav");
     var rect=new Audio("shapeGame/sounds/doorbell.wav");
-    shapeSounds.push(square,circle,triangle,vrect,rect);
+
+    shapeSounds.push(square,circle,triangle,vRect,rect);
 
 }
 
@@ -82,28 +71,32 @@ function initShapeMenu(shapeMenu, canvasName) {
 
 
 function shapeGame(canvasName) {
+
+
+    window.removeEventListener("resize",OnResizeMonkeyHouse, false);
     window.removeEventListener("click",BackToGames,false);
     window.removeEventListener("click",OnClickMonkeyHouse,false);
     window.removeEventListener("click",OnClickHome,false);
 
+    window.addEventListener("resize", OnResize, false);
+
     score=0;
     matchingAttempts=0;
-    var snd = new Audio("shapeGame/sounds/doorbell.wav"); // buffers automatically when created
+
+    //play instructions
+    var snd = new Audio("shapeGame/sounds/doorbell.wav");
     snd.play();
 
     initShapeSounds();
-
-    //window.addEventListener("mouseover",mouseOverSounds,false);
 
     if (!canvasSupport())
         return;
 
     canvasInit(canvasName, 2.5);
-    // if(arguments.callee.caller.name!="OnResize")
-    {
-        initShapeMenu(shapeMenu, canvasName);
-        getShapeModel(shapeModel);
-    }
+
+    initShapeMenu(shapeMenu, canvasName);
+    getShapeModel(shapeModel);
+
     drawShapeArray(shapeMenu);
     drawShapeArray(shapeModel);
 
@@ -117,28 +110,16 @@ function shapeGame(canvasName) {
 
 }
 
-function mouseOverSounds(event)
-{
-    var x=event.pageX;
-    var y= event.pageY;
-    for ( var index in shapeMenu)
-    {if(shapeMenu[index].isPointInside(x,y))
-        if(getObjectType(shapeMenu[index])=="Square")
-        {alert('mouse over square');
-
-        }
-    }
-}
-
 function gameOver()
 {
-    if ((!winGame()) && matchingAttempts - 1 == shapeModel.length)
-        return true;
+    return ((!winGame()) && matchingAttempts - 1 == shapeModel.length)
+
 }
+
 function winGame()
 {
-    var shape;
-    for (shape in shapeModel)
+
+    for (var shape in shapeModel)
     {
         if (shapeModel[shape].fillColor != "#8A9B0F")
             return false;
@@ -198,8 +179,7 @@ function mouseDownEvent(event) {
                 {
                     shapeSounds[4].play();
                     break;
-                };
-
+                }
             }
             shapeIndex = i;
             break;
@@ -244,6 +224,7 @@ function onTimerTick()
         clearInterval(timer);
     }
     drawScreen();
+    return;
 
 }
 

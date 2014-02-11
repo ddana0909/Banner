@@ -25,6 +25,7 @@ function OnResizeHome()
     canvas.width = window.innerWidth;
     canvas.height =canvas.width/canvasAspectRatio;
     canvasApp();
+    return;
 }
 
 window.addEventListener("click",OnClickHome,false);
@@ -46,16 +47,19 @@ function OnClickHome(event)
             if(img.name=="monkey.png"||img.name=="monkeyHouse.png"||img.name=="monkeySign.png")
             {
                 monkeyHouse();
+                return;
             }
 
             if(img.name=="penguin.png"||img.name=="penguinSign.png"||img.name=="igloo.png")
             {
                 penguinHouse();
+                return;
             }
 
             if(img.name=="lion.png"||img.name=="lionHouse.png"||img.name=="lionsSign.png")
             {
                 lionHouse();
+                return;
             }
         }
         i++;
