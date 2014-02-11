@@ -1,19 +1,20 @@
 /**
  * Created by Dana on 01/02/14.
  */
-function displayMenuPicture(source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop)
+function displayMenuPicture(source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop,dxPerc,dyPerc)
 {
+    var canvas= document.getElementById("canvas");
     this.width=width;
     this.height=height;
     this.gridColumns=gridColumns;
     this.gridRows=gridRows;
     this.gridColumn=gridColumn;
     this.gridRow=gridRow;
-    this.gridMarginLeft=gridMarginLeft*window.innerWidth;
-    this.gridMarginTop=gridMarginTop*(window.innerWidth/canvasAspectRatio);
+    this.gridMarginLeft=gridMarginLeft*canvas.width;
+    this.gridMarginTop=gridMarginTop*(canvas.width/canvasAspectRatio);
 
-    var availableWidth=window.innerWidth-2*this.gridMarginLeft;
-    var availableHeight=(window.innerWidth/canvasAspectRatio)-2*this.gridMarginTop;
+    var availableWidth=canvas.width-2*this.gridMarginLeft;
+    var availableHeight=(canvas.width/canvasAspectRatio)-2*this.gridMarginTop;
     var imageRatio=width/height;
 
     //create the grid stuff
@@ -37,6 +38,16 @@ function displayMenuPicture(source, width, height, gridColumns, gridRows, gridCo
 
     var d=(cellWidth-width)/2;
     positionOnX=positionOnX+d;
+    var dy=(cellHeight-height)/2;
+    positionOnY=positionOnY+dy;
+
+    if(dxPerc)
+        positionOnX+=dxPerc*canvas.width;
+
+    if(dyPerc)
+        positionOnY+=dyPerc*canvas.height;
+
+
 
     var canvas = document.getElementById('canvas'),
         context = canvas.getContext('2d');
@@ -52,7 +63,9 @@ function displayMenuPicture(source, width, height, gridColumns, gridRows, gridCo
         arrowBackToHome=new CanvasImage(source,positionOnX,positionOnY,width,height);
     }
     else
-    if(source=="lion.jpg"||source=="monkey.jpg"||source=="penguin.jpg")
+    if(source=="lion.png"||source=="monkey.png"||source=="penguin.png"
+        ||source=="monkeySign.png"||source=="igloo.png"||source=="monkeyHouse.png"
+        ||source=="penguinSign.png"||source=="lionHouse.png"||"lionsSign.png")
     {
         var img=new CanvasImage(source,positionOnX,positionOnY,width,height);
         imagesOnCanvas.push(img);
