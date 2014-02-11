@@ -16,6 +16,7 @@ window.addEventListener("load", eventWindowLoaded, false);
 function eventWindowLoaded ()
     {
         canvasApp();
+        //dana
     }
 
 window.addEventListener("resize", OnResizeHome, false);
