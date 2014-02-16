@@ -73,6 +73,7 @@ function canvasApp()
     window.removeEventListener("click", OnClickMonkeyHouse, false); //trebuie sa dezactivam chestiile din Houses
     window.removeEventListener("resize", OnResizeMonkeyHouse, false); //exact asa tre facut si pt click
 
+    window.removeEventListener("click", OnClickPenguinHouse, false);
     window.removeEventListener("resize", OnResizePenguinHouse, false);
     window.removeEventListener("resize", OnResizeLionHouse, false);
 

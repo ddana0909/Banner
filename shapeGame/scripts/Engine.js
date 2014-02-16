@@ -118,7 +118,7 @@ function drawRectangle()
 
 function areaRectangle()
 {
-    return this.width*this.length;
+    return this.width*this.height;
 }
 
 
@@ -341,35 +341,154 @@ function displayPicture(canvasName,source, width, height, gridColumns, gridRows,
     }
 }
 
-function getShapeModel(shapeModel)
+function getShapeModel(shapeModel, randomNumber)
 {
     clearArray(shapeModel);
+switch (randomNumber)
+    {
+    case 0:
+    {
+        var settings = getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
+        var square=new Square("canvas",settings.width,settings.height,settings.positionOnX, settings.positionOnY,"black","#FBB829");
+        shapeModel.push(square);
 
-    var settings = getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
-    var square=new Square("canvas",settings.width,settings.height,settings.positionOnX, settings.positionOnY,"black","#FBB829");
-    shapeModel.push(square);
-
-    var cSettings=getSettingsForGrid("canvas",0.05,0.01,3,3,50,50,2,2);
-    cSettings.width=settings.width/3;
-    cSettings.positionOnX=settings.positionOnX+settings.width/2;
-    cSettings.positionOnY=settings.positionOnY+settings.width/2;
-    var circle= new Circle("canvas",cSettings.positionOnX,cSettings.positionOnY,cSettings.width/2,"black","#FBB829");
-    shapeModel.push(circle);
+        var cSettings=getSettingsForGrid("canvas",0.05,0.01,3,3,50,50,2,2);
+        cSettings.width=settings.width/3;
+        cSettings.positionOnX=settings.positionOnX+settings.width/2;
+        cSettings.positionOnY=settings.positionOnY+settings.width/2;
+        var circle= new Circle("canvas",cSettings.positionOnX,cSettings.positionOnY,cSettings.width/2,"black","#FBB829");
+        shapeModel.push(circle);
 
 
-    var tSettings=getSettingsForGrid("canvas",0.05,0.01,3,3,40,40,2,2);
-    tSettings.width=0.8*settings.width/3;
-    tSettings.height=0.8*settings.height/3;
-    var triangle= new Triangle("canvas",cSettings.positionOnX ,cSettings.positionOnY-tSettings.height-cSettings.width/2-3,tSettings.height,tSettings.width,"black","#FBB829");
-    shapeModel.push(triangle);
+        var tSettings=getSettingsForGrid("canvas",0.05,0.01,3,3,40,40,2,2);
+        tSettings.width=0.8*settings.width/3;
+        tSettings.height=0.8*settings.height/3;
+        var triangle= new Triangle("canvas",cSettings.positionOnX ,cSettings.positionOnY-tSettings.height-cSettings.width/2-3,tSettings.height,tSettings.width,"black","#FBB829");
+        shapeModel.push(triangle);
 
-    var rvSettings=getSettingsForGrid("canvas",0.05,0.01,3,3,80,50,2,2);
-    rvSettings.width=settings.width/3;
-    rvSettings.height=settings.height/2;
-    rvSettings.positionOnY-=(rvSettings.height+(rvSettings.positionOnY-settings.positionOnY+3));
-    rvSettings.positionOnX=settings.positionOnX+rvSettings.width;
-    var vrectangle=new VRectangle("canvas",rvSettings.width,rvSettings.height,rvSettings.positionOnX, rvSettings.positionOnY,"black","#FBB829");
-    shapeModel.push(vrectangle);
+        var rvSettings=getSettingsForGrid("canvas",0.05,0.01,3,3,80,50,2,2);
+        rvSettings.width=settings.width/3;
+        rvSettings.height=settings.height/2;
+        rvSettings.positionOnY-=(rvSettings.height+(rvSettings.positionOnY-settings.positionOnY+3));
+        rvSettings.positionOnX=settings.positionOnX+rvSettings.width;
+        var vrectangle=new VRectangle("canvas",rvSettings.width,rvSettings.height,rvSettings.positionOnX, rvSettings.positionOnY,"black","#FBB829");
+        shapeModel.push(vrectangle);
+
+        break;
+    }
+    case 1:
+    {
+
+        var cSettings= getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
+        cSettings.positionOnX+=cSettings.width/2;
+        cSettings.positionOnY+=cSettings.width/2;
+        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "FBB829");
+        shapeModel.push(circle);
+
+        var sSettings= getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
+        sSettings.width/=3;
+        sSettings.positionOnX+=sSettings.width;
+        sSettings.positionOnY+=sSettings.width;
+        var square=new Square("canvas",sSettings.width,sSettings.width,sSettings.positionOnX, sSettings.positionOnY,"black","#FBB829");
+        shapeModel.push(square);
+
+        var rSettings = getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
+        rSettings.height/=3;
+        rSettings.positionOnY+=cSettings.width;
+        var rectangle= new Rectangle("canvas",  rSettings.width, rSettings.height,rSettings.positionOnX, rSettings.positionOnY, "black", "FBB829");
+        shapeModel.push(rectangle);
+
+        var rvSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        rvSettings.width/=3;
+        rvSettings.height+=rSettings.height;
+        rvSettings.positionOnX+= cSettings.width+2;
+        var vrectangle=new VRectangle("canvas",rvSettings.width,rvSettings.height,rvSettings.positionOnX, rvSettings.positionOnY,"black","#FBB829");
+        shapeModel.push(vrectangle);
+
+        var tSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        tSettings.height=tSettings.height/2;
+        tSettings.positionOnX+= cSettings.width/2;
+        tSettings.positionOnY-=cSettings.width/2+4;
+        var triangle= new Triangle("canvas",tSettings.positionOnX ,tSettings.positionOnY,tSettings.height,tSettings.width,"black","#FBB829");
+        shapeModel.push(triangle);
+        break;
+    }
+    case 2:
+    {
+        var sSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        sSettings.width/=3;
+        var square=new Square("canvas",sSettings.width,sSettings.width,sSettings.positionOnX, sSettings.positionOnY,"black","#FBB829");
+        shapeModel.push(square);
+
+        var tSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        tSettings.width/=2;
+        tSettings.height/=1.5;
+        tSettings.positionOnX+=sSettings.width+tSettings.width/2+4;
+        tSettings.positionOnY-=(tSettings.height-sSettings.width);
+        var triangle= new Triangle("canvas",tSettings.positionOnX ,tSettings.positionOnY,tSettings.height,tSettings.width,"black","#FBB829");
+        shapeModel.push(triangle);
+
+        var rSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        rSettings.width=tSettings.width+sSettings.width+4;
+        rSettings.height/=3;
+        rSettings.positionOnY+=sSettings.width+3;
+        var rectangle= new Rectangle("canvas",  rSettings.width, rSettings.height,rSettings.positionOnX, rSettings.positionOnY, "black", "FBB829");
+        shapeModel.push(rectangle);
+
+        var cSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        cSettings.width=(rSettings.height-4);
+        cSettings.positionOnX=rSettings.positionOnX+rSettings.width/2;
+        cSettings.positionOnY=rSettings.positionOnY+cSettings.width/2+2;
+        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "FBB829");
+        shapeModel.push(circle);
+
+        var vrSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        vrSettings.width=sSettings.width;
+        vrSettings.height=sSettings.width+rSettings.height+4;
+        vrSettings.positionOnX=sSettings.positionOnX+rSettings.width+3;
+        vrSettings.positionOnY=sSettings.positionOnY;
+        var vRectangle=new VRectangle("canvas",vrSettings.width,vrSettings.height,vrSettings.positionOnX, vrSettings.positionOnY,"black","#FBB829");
+        shapeModel.push(vRectangle);
+
+        break;
+    }
+    case 3:
+    {
+        var vrSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        vrSettings.width/=3;
+        vrSettings.height/=1.25;
+        vrSettings.positionOnX+=vrSettings.width;
+        vrSettings.positionOnY+=vrSettings.width;
+        var vRectangle=new VRectangle("canvas",vrSettings.width,vrSettings.height,vrSettings.positionOnX, vrSettings.positionOnY,"black","#FBB829");
+        shapeModel.push(vRectangle);
+
+        var tSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        tSettings.height/=1.5;
+        tSettings.width*=1.25;
+        tSettings.positionOnX=vrSettings.positionOnX+vrSettings.width/2;
+        tSettings.positionOnY=vrSettings.positionOnY-tSettings.height-3;
+        var triangle= new Triangle("canvas",tSettings.positionOnX ,tSettings.positionOnY,tSettings.height,tSettings.width,"black","#FBB829");
+        shapeModel.push(triangle);
+
+        var sSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        sSettings.width=vrSettings.width-0.15*vrSettings.width;
+        sSettings.positionOnX=vrSettings.positionOnX+(vrSettings.width-sSettings.width)/2;
+        sSettings.positionOnY=vrSettings.positionOnY-sSettings.width-4;
+        var square=new Square("canvas",sSettings.width,sSettings.width,sSettings.positionOnX, sSettings.positionOnY,"black","#FBB829");
+        shapeModel.push(square);
+
+        var cSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
+        cSettings.width=tSettings.height/2;
+        cSettings.positionOnX=tSettings.positionOnX;
+        cSettings.positionOnY=tSettings.positionOnY-cSettings.width/2-3;
+        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "FBB829");
+        shapeModel.push(circle);
+
+        break;
+
+    }
+
+}
 }
 
 function centerText(message, canvas)
@@ -381,7 +500,7 @@ function centerText(message, canvas)
 
 }
 
-function writeText(message,positionOnX,fontSize)
+function writeText(message,positionOnX,fontSize,positionOnY)
 {
     var canvas = document.getElementById("canvas");
     var context = getCanvasContext("canvas");
@@ -389,8 +508,11 @@ function writeText(message,positionOnX,fontSize)
     context.font = fontSize +"px _sans";
     context.textBaseline = "top";
 
-    var position = centerText(message, canvas);
-
+    var position;
+    if(positionOnY)
+        position=positionOnY;
+    else
+        position = centerText(message, canvas);
     context.fillText(message, position, positionOnX);
 }
 

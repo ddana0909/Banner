@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<body >
+
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+		
+  
+	
+      }
+    </style>
+	<!-- libary is used for dragging and dropping -->
+    <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.7.4.min.js"></script>
+	<!-- libary for sound -->
+	 <script src="Scripts/modernizr-latest.js"></script>
+	 <script defer="defer" src="Scripts/Dragging_Java_script.js"></script>
+	
+    <!--<script src="Scripts/ShapeGame.js"></script>
+	
+    <script src="Scripts/Engine.js"></script>
+	-->
+  </head>
+  <body 
+   background="images/background.jpg";
+	background-repeat: no-repeat;
+  
+ >
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+function add_score2() {
+    var gamescore = 100;          
+
+    $.ajax({
+        type: "POST",
+        url: "process.php",
+        data: "score=" + gamescore,
+        success: function () {
+			    alert("success!!!!");
+        }
+    });
+    }
+</script>
+
+
+<body>
+<a href="#" onclick="add_score2()">add 100 to total score</a>
+</body>
+ 
+
+	<!-- creating my HTML controls  background="images/background.jpg";
+background-repeat:no-repeat;> -->
+    <div id="container">
+	</div>
+ 
+	<!-- todo check see if needed
+    <div id="mouseposition"></div>
+
+	<!-- todo check see if needed
+	<div id="divdragend"></div>
+
+	<!-- starts game, generates random number for how many boxes to put in square and play sounds-->
+	<button onclick="Start()">Start</button>
+
+	<!-- checks to see if correct number of boxes was dragged into the square  and plays sound-->
+	<button   onclick="Check()">Check!</button>
+
+
+
+	
+  </body>
+</html>

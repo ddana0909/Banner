@@ -75,7 +75,7 @@ function displayMenuPicture(source, width, height, gridColumns, gridRows, gridCo
         shapesGame  = new CanvasImage(source, positionOnX, positionOnY, width, height);
     }
 
-    if(source=="counting.gif")
+    if(source=="DragBoxes.jpg")
     {
         countingGame =new CanvasImage(source,positionOnX,positionOnY,width,height);
     }
