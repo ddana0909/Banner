@@ -2,14 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39cd7bd8-ca53-4e33-8daa-cc740a2f354d" name="Default" comment="resize on game without progress save&#10;">
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Games\shapeGame\images\lose.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\counting.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\lion.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\monkey.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\penguin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\images\win.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\doorbell.wav" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\song1.ogg" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\song1.wav" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeGame/scripts/Engine.js" afterPath="$PROJECT_DIR$/shapeGame/scripts/Engine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" afterPath="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic.js" afterPath="$PROJECT_DIR$/basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.js" afterPath="$PROJECT_DIR$/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/penguinHouse.js" afterPath="$PROJECT_DIR$/penguinHouse.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\.idea\Banner Prototype.iml" afterPath="$PROJECT_DIR$/.idea/Banner.iml" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\DragBoxes.jpg" afterPath="$PROJECT_DIR$/Images/DragBoxes.jpg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\arrowLeft.png" afterPath="$PROJECT_DIR$/Images/arrowLeft.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\basic.js" afterPath="$PROJECT_DIR$/Scripts/basic.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\A.png" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/A.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\BigSquare.js" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/BigSquare.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\BigSquare.js.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/BigSquare.js.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\dragme.html" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/dragme.html" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\dragme.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/dragme.html.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\makeSquareBig.html" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/makeSquareBig.html" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\makeSquareBig.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/makeSquareBig.html.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\moveimage.txt" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/moveimage.txt" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\DrageNdropK2.html" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/DrageNdropK2.html" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\DrageNdropK2.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/DrageNdropK2.html.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Dragging_Java_script.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Dragging_Java_script.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Dragging_Java_script.js.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Dragging_Java_script.js.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Dragging_Java_script.js.bak.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Dragging_Java_script.js.bak.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Engine.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Engine.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\ShapeGame.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/ShapeGame.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\modernizr-latest.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/modernizr-latest.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\applause_y.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/applause_y.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\crank-1.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/crank-1.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\doorbell.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/doorbell.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\fail-buzzer-04.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/fail-buzzer-04.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\monkey2.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/monkey2.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\slide_whistle_up.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/slide_whistle_up.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\images\backgroun2.jpg" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/images/backgroun2.jpg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\images\background.jpg" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/images/background.jpg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\images\cupcake.jpg" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/images/cupcake.jpg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\fallingLetter.html" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/fallingLetter.html" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\fallingLetter.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/fallingLetter.html.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\images\A.png" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/images/A.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\images\enemy.png" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/images/enemy.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\index.html" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/index.html" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\index.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/index.html.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\jquery.hotkeys.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/jquery.hotkeys.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\jquery.hotkeys.js.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/jquery.hotkeys.js.bak" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\key_status.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/key_status.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\sound.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/sound.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\sprite.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/sprite.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\util.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/util.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\stylesheets\screen.css" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/stylesheets/screen.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\home.js" afterPath="$PROJECT_DIR$/Scripts/home.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\igloo.png" afterPath="$PROJECT_DIR$/Images/igloo.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lion.png" afterPath="$PROJECT_DIR$/Images/lion.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lionHouse.js" afterPath="$PROJECT_DIR$/Scripts/lionHouse.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lionHouse.png" afterPath="$PROJECT_DIR$/Images/lionHouse.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lionsSign.png" afterPath="$PROJECT_DIR$/Images/lionsSign.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\modernizr-latest.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/modernizr-latest.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkey.png" afterPath="$PROJECT_DIR$/Images/monkey.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkeyHouse.js" afterPath="$PROJECT_DIR$/Scripts/monkeyHouse.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkeyHouse.png" afterPath="$PROJECT_DIR$/Images/monkeyHouse.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkeySign.png" afterPath="$PROJECT_DIR$/Images/monkeySign.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\palm.png" afterPath="$PROJECT_DIR$/Images/palm.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\penguin.png" afterPath="$PROJECT_DIR$/Images/penguin.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\penguinHouse.js" afterPath="$PROJECT_DIR$/Scripts/penguinHouse.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\penguinSign.png" afterPath="$PROJECT_DIR$/Images/penguinSign.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\planet.png" afterPath="$PROJECT_DIR$/Images/planet.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\savannahTree.png" afterPath="$PROJECT_DIR$/Images/savannahTree.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\images\coin.gif" afterPath="$PROJECT_DIR$/Games/shapeGame/images/coin.gif" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\images\lionface.png" afterPath="$PROJECT_DIR$/Games/shapeGame/images/lionface.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\php\score.php" afterPath="$PROJECT_DIR$/Games/shapeGame/php/score.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\Engine.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\ShapeGame.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\jquery-1.11.0.min.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/jquery-1.11.0.min.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\modernizr-latest.js" afterPath="$PROJECT_DIR$/Scripts/modernizr-latest.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\circle.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/circle.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\gameOver.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/gameOver.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\instructions.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/instructions.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\rectangle.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/rectangle.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\square.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/square.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\triangle.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/triangle.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\wellDone.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/wellDone.wav" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\style\bootstrap.css" afterPath="$PROJECT_DIR$/Games/shapeGame/style/bootstrap.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapes.jpg" afterPath="$PROJECT_DIR$/Images/shapes.jpg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\styles.css" afterPath="$PROJECT_DIR$/Style/styles.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\welcomeLion.png" afterPath="$PROJECT_DIR$/Images/welcomeLion.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\welcomeMonkey.png" afterPath="$PROJECT_DIR$/Images/welcomeMonkey.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\welcomePenguin.png" afterPath="$PROJECT_DIR$/Images/welcomePenguin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/banner.html" afterPath="$PROJECT_DIR$/banner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Banner Prototype.iws" />
@@ -33,82 +116,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="banner.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="banner.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/banner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="score.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shapeGame/php/score.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="72" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basic.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="0" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="1220" max-vertical-offset="1870">
-              <folding />
+            <state line="5" column="66" selection-start="157" selection-end="157" vertical-scroll-proportion="0.13621795" vertical-offset="0" max-vertical-offset="624">
+              <folding>
+                <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home.js">
+        <entry file="file://$PROJECT_DIR$/Scripts/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="68" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="2006">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="monkeyHouse.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monkeyHouse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="5" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1173">
+            <state line="104" column="5" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="penguinHouse.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/penguinHouse.js">
+        <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="35" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="1122">
+            <state line="26" column="35" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lionHouse.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lionHouse.js">
+      <file leaf-file-name="ShapeGame.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShapeGame.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="348" column="13" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.6666667" vertical-offset="5508" max-vertical-offset="8126">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Engine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="512" column="29" selection-start="16863" selection-end="16863" vertical-scroll-proportion="-18.36" vertical-offset="8245" max-vertical-offset="8908">
+            <state line="367" column="29" selection-start="10912" selection-end="10912" vertical-scroll-proportion="-10.2" vertical-offset="5984" max-vertical-offset="9231">
               <folding />
             </state>
           </provider>
@@ -137,22 +177,29 @@
         <option value="$PROJECT_DIR$/Home.js" />
         <option value="$PROJECT_DIR$/MonkeyHouse.js" />
         <option value="$PROJECT_DIR$/ShapeGame/Scripts/ShapeGame.js" />
-        <option value="$PROJECT_DIR$/lionHouse.js" />
         <option value="$PROJECT_DIR$/dragging_game/Scripts/Dragging_Java_script.js" />
         <option value="$PROJECT_DIR$/monkeyHouse.js" />
-        <option value="$PROJECT_DIR$/banner.html" />
-        <option value="$PROJECT_DIR$/home.js" />
         <option value="$PROJECT_DIR$/basic.js" />
         <option value="$PROJECT_DIR$/penguinHouse.js" />
         <option value="$PROJECT_DIR$/shapeGame/scripts/Engine.js" />
+        <option value="$PROJECT_DIR$/home.js" />
+        <option value="$PROJECT_DIR$/lionHouse.js" />
         <option value="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" />
+        <option value="$PROJECT_DIR$/banner.html" />
+        <option value="$PROJECT_DIR$/Scripts/home.js" />
+        <option value="$PROJECT_DIR$/Scripts/basic.js" />
+        <option value="$PROJECT_DIR$/Scripts/lionHouse.js" />
+        <option value="$PROJECT_DIR$/Scripts/monkeyHouse.js" />
+        <option value="$PROJECT_DIR$/Scripts/penguinHouse.js" />
+        <option value="$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js" />
+        <option value="$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1374" />
-    <option name="y" value="-158" />
-    <option name="width" value="1382" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1320" />
     <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -203,7 +250,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,19 +268,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/dragging_game" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Style" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Banner\Style" />
+      <recent name="C:\xampp\htdocs\Banner\Scripts" />
+      <recent name="C:\xampp\htdocs\Banner\Images" />
+      <recent name="C:\xampp\htdocs\Banner\" />
+      <recent name="C:\xampp\htdocs\Banner\Games" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Banner.html (1)">
     <configuration default="false" name="Banner.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" engineId="firefox" uri="http://localhost:49845/Banner Prototype/Banner.html">
@@ -362,14 +486,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1374" y="-158" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20937042" sideWeight="0.6901639" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18481596" sideWeight="0.6901639" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3091716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -377,12 +501,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -416,32 +540,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/lionHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="382" column="48" selection-start="10848" selection-end="10848" vertical-scroll-proportion="0.0" vertical-offset="6188" max-vertical-offset="6817">
-          <folding />
-        </state>
+        <state line="32" column="0" selection-start="808" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1020" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lionHouse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="808" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="189" column="0" selection-start="5723" selection-end="5723" vertical-scroll-proportion="0.0" vertical-offset="3001" max-vertical-offset="6698">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="181" column="39" selection-start="4231" selection-end="4231" vertical-scroll-proportion="0.0" vertical-offset="2704" max-vertical-offset="6630">
           <folding />
@@ -451,53 +566,49 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="6" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/basic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="41" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="565" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="45" column="41" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="565" max-vertical-offset="1547" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1734">
-          <folding />
-        </state>
+        <state line="77" column="0" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1734" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkeyHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/monkeyHouse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="3" selection-start="1055" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1105">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/penguinHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="12" column="52" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lionHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/lionHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="986">
-          <folding />
-        </state>
+        <state line="10" column="4" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="986" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="251" column="0" selection-start="7782" selection-end="7782" vertical-scroll-proportion="0.0" vertical-offset="4267" max-vertical-offset="6545">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="375" column="8" selection-start="10637" selection-end="10637" vertical-scroll-proportion="0.0" vertical-offset="6001" max-vertical-offset="6630">
           <folding />
@@ -507,53 +618,49 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="425">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/basic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="4" selection-start="2330" selection-end="2330" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="80" column="4" selection-start="2330" selection-end="2330" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1547" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.0" vertical-offset="1001" max-vertical-offset="1734">
-          <folding />
-        </state>
+        <state line="94" column="0" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.0" vertical-offset="1001" max-vertical-offset="1734" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkeyHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/monkeyHouse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="51" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="867">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/penguinHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
-          <folding />
-        </state>
+        <state line="11" column="51" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lionHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/lionHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="833">
-          <folding />
-        </state>
+        <state line="9" column="51" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="833" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="293" column="9" selection-start="8521" selection-end="8521" vertical-scroll-proportion="0.0" vertical-offset="4830" max-vertical-offset="5219">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="31" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="6443">
           <folding />
@@ -563,11 +670,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="13" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="5236">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
       </provider>
@@ -575,11 +684,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="234" column="33" selection-start="8255" selection-end="8255" vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="5270">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
       </provider>
@@ -587,11 +698,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="234" column="33" selection-start="8255" selection-end="8255" vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="5270">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
       </provider>
@@ -599,11 +712,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="257" column="5" selection-start="8914" selection-end="8914" vertical-scroll-proportion="0.0" vertical-offset="4369" max-vertical-offset="4845">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
       </provider>
@@ -611,11 +726,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="22" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="3825">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="4" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="136" />
       </provider>
@@ -623,11 +740,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="43" selection-start="2703" selection-end="2703" vertical-scroll-proportion="0.0" vertical-offset="1184" max-vertical-offset="2329">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
@@ -635,11 +754,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="72" selection-start="3314" selection-end="3314" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="2329">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
@@ -647,11 +768,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="31" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="633" max-vertical-offset="2380">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
@@ -659,11 +782,13 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="94" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="1241">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
@@ -671,85 +796,89 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/background.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/Style/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lionHouse.js">
+    <entry file="file://$PROJECT_DIR$/Images/shapes.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/php/score.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1020">
+        <state line="12" column="72" selection-start="393" selection-end="393" vertical-scroll-proportion="0.31384614" vertical-offset="0" max-vertical-offset="650" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/basic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkeyHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/monkeyHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="5" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="1173">
+        <state line="59" column="1" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.84307694" vertical-offset="455" max-vertical-offset="1105">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="1" selection-start="237" selection-end="237" vertical-scroll-proportion="-12.690738" vertical-offset="8220" max-vertical-offset="8857">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/penguinHouse.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/lionHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="35" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="1122">
+        <state line="21" column="31" selection-start="730" selection-end="730" vertical-scroll-proportion="0.54923075" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/php/score.php">
+    <entry file="file://$PROJECT_DIR$/Scripts/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="72" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="104" column="5" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.js">
+    <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="68" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="2006">
+        <state line="26" column="35" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic.js">
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="1220" max-vertical-offset="1870">
+        <state line="367" column="29" selection-start="10912" selection-end="10912" vertical-scroll-proportion="-10.2" vertical-offset="5984" max-vertical-offset="9231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/Engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="512" column="29" selection-start="16863" selection-end="16863" vertical-scroll-proportion="-18.36" vertical-offset="8245" max-vertical-offset="8908">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="348" column="13" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.6666667" vertical-offset="5508" max-vertical-offset="8126">
-          <folding />
+        <state line="5" column="66" selection-start="157" selection-end="157" vertical-scroll-proportion="0.13621795" vertical-offset="0" max-vertical-offset="624">
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,4 @@
-/**
- * Created by Dana on 01/02/14.
- */
-
 //<reference path="dragging_game/Scripts/Dragging_Java_script.js"/>
-
-
 function penguinHouse()
 {
     window.removeEventListener("click",OnClickMonkeyHouse,false);
@@ -13,7 +7,7 @@ function penguinHouse()
     window.removeEventListener("click",OnClickHome,false);
 
 
-    window.addEventListener("click",OnClickPenguinHouse,false); //will be uniqe for each "canvas". Not implemented now cause we have only the back arroow
+    window.addEventListener("click",OnClickPenguinHouse,false);
     window.addEventListener("resize", OnResizePenguinHouse,false);
 
     var canvas = document.getElementById('canvas');
@@ -24,9 +18,9 @@ function penguinHouse()
     context.fillStyle = "#00A8C6";
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    displayMenuPicture("welcomePenguin.png",739,37,1,5,1,1,0.05,0.05);
-    displayMenuPicture("DragBoxes.jpg",286,340,4 ,3,1,2,0.05,0.05);
-    displayMenuPicture("arrowLeft.png",48,48,20,10,1,10,0.00,0.00);
+    displayMenuPicture("Images/welcomePenguin.png",739,37,1,5,1,1,0.05,0.05);
+    displayMenuPicture("Images/DragBoxes.jpg",286,340,4 ,3,1,2,0.05,0.05);
+    displayMenuPicture("Images/arrowLeft.png",48,48,20,10,1,10,0.00,0.00);
 
 }
 
@@ -44,7 +38,7 @@ function OnClickPenguinHouse(event)
         &&y>=countingGame.positionOnY && y<=countingGame.positionOnY+countingGame.height)
     {
         /* this is the file path to where the game is */
-        window.location="edu_centre/dragging_game/DrageNdropK2.html"
+        window.location="../Games/edu_centre/dragging_game/DrageNdropK2.html"
     }
 
 

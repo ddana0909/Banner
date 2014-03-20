@@ -1,6 +1,3 @@
-/**
- * Created by Dana on 11/2/13.
- */
 //<reference path="scripts/modernizr-latest.js"/>
 
 function canvasInit(canvasName,aspectRatio)

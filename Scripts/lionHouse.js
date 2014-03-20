@@ -1,17 +1,9 @@
-/**
- * Created by Dana on 01/02/14.
- */
-
-
 function lionHouse()
 {
     window.removeEventListener("click",OnClickMonkeyHouse,false);
 
     window.removeEventListener("mousedown",mouseDownEvent,false);
     window.removeEventListener("click",OnClickHome,false);
-
-
-
 
     window.addEventListener("click",OnClickLionHouse,false);
     window.addEventListener("resize", OnResizeLionHouse,false);
@@ -25,9 +17,9 @@ function lionHouse()
     context.fillStyle = " #8FBE00";
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    displayMenuPicture("welcomeLion.png",749,37,1,5,1,1,0.05,0.05);
+    displayMenuPicture("Images/welcomeLion.png",749,37,1,5,1,1,0.05,0.05);
 
-    displayMenuPicture("arrowLeft.png",48,48,20,10,1,10,0.00,0.00);
+    displayMenuPicture("Images/arrowLeft.png",48,48,20,10,1,10,0.00,0.00);
 }
 
 function OnClickLionHouse(event)

@@ -1,6 +1,3 @@
-/**
- * Created by Dana on 01/02/14.
- */
 function displayMenuPicture(source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop,dxPerc,dyPerc)
 {
     var canvas= document.getElementById("canvas");
@@ -58,28 +55,28 @@ function displayMenuPicture(source, width, height, gridColumns, gridRows, gridCo
         context.drawImage(imageToDisplay, positionOnX, positionOnY, width, height);
     };
 
-    if(source=="arrowLeft.png")
+    if(source=="Images/arrowLeft.png")
     {
         arrowBackToHome=new CanvasImage(source,positionOnX,positionOnY,width,height);
     }
     else
-    if(source=="lion.png"||source=="monkey.png"||source=="penguin.png"
-        ||source=="monkeySign.png"||source=="igloo.png"||source=="monkeyHouse.png"
-        ||source=="penguinSign.png"||source=="lionHouse.png"||"lionsSign.png")
+    if(source=="Images/lion.png"||source=="Images/monkey.png"||source=="Images/penguin.png"
+        ||source=="Images/monkeySign.png"||source=="Images/igloo.png"||source=="Images/monkeyHouse.png"
+        ||source=="Images/penguinSign.png"||source=="Images/lionHouse.png"||"Images/lionsSign.png")
     {
         var img=new CanvasImage(source,positionOnX,positionOnY,width,height);
         imagesOnCanvas.push(img);
     }
-    if(source=="shapes.jpg")
+    if(source=="Images/shapes.jpg")
     {
         shapesGame  = new CanvasImage(source, positionOnX, positionOnY, width, height);
     }
 
-    if(source=="DragBoxes.jpg")
+    if(source=="Images/DragBoxes.jpg")
     {
         countingGame =new CanvasImage(source,positionOnX,positionOnY,width,height);
     }
-
+	return;
 }
 
 function CanvasImage(name,positionOnX, positionOnY, width, height)

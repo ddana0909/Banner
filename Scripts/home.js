@@ -1,6 +1,3 @@
-/**
- * Created by Dana on 01/02/14.
- */
 //<reference path="scripts/monkeyHouse.js"/>
 
 var imagesOnCanvas= [];
@@ -44,19 +41,19 @@ function OnClickHome(event)
         {  window.removeEventListener("click",OnClickHome,false);
             window.removeEventListener("resize",OnResizeHome,false);
 
-            if(img.name=="monkey.png"||img.name=="monkeyHouse.png"||img.name=="monkeySign.png")
+            if(img.name=="Images/monkey.png"||img.name=="Images/monkeyHouse.png"||img.name=="Images/monkeySign.png")
             {
                 monkeyHouse();
                 return;
             }
 
-            if(img.name=="penguin.png"||img.name=="penguinSign.png"||img.name=="igloo.png")
+            if(img.name=="Images/penguin.png"||img.name=="Images/penguinSign.png"||img.name=="Images/igloo.png")
             {
                 penguinHouse();
                 return;
             }
 
-            if(img.name=="lion.png"||img.name=="lionHouse.png"||img.name=="lionsSign.png")
+            if(img.name=="Images/lion.png"||img.name=="Images/lionHouse.png"||img.name=="Images/lionsSign.png")
             {
                 lionHouse();
                 return;
@@ -85,21 +82,21 @@ function canvasApp()
     canvas.width = window.innerWidth;
     canvas.height = canvas.width/canvasAspectRatio;
 
-    displayMenuPicture("planet.png",1740,696,1,1,1,1,0,0);
+    displayMenuPicture("Images/planet.png",1740,696,1,1,1,1,0,0);
 
-    displayMenuPicture("monkey.png",333,381,13,4,4,4,-0.01,0.00);
-    displayMenuPicture("monkeyHouse.png",243,329,5,2,1,2,0.23,0.24,0.01,0.01);
-    displayMenuPicture("palm.png",252,293,5,2,1,2,0.04,0.00,0.04,-0.01);
-    displayMenuPicture("monkeySign.png",115,142,5,4,1,4,0.28,0.13,0.02,-0.05);
+    displayMenuPicture("Images/monkey.png",333,381,13,4,4,4,-0.01,0.00);
+    displayMenuPicture("Images/monkeyHouse.png",243,329,5,2,1,2,0.23,0.24,0.01,0.01);
+    displayMenuPicture("Images/palm.png",252,293,5,2,1,2,0.04,0.00,0.04,-0.01);
+    displayMenuPicture("Images/monkeySign.png",115,142,5,4,1,4,0.28,0.13,0.02,-0.05);
 
-    displayMenuPicture("igloo.png",388,237,7,2,4,2,0.05,0.30,0.01,-0.06);
-    displayMenuPicture("penguin.png",142,228,2,3,1,3,0.40,0.20,-0.01,-0.05);
-    displayMenuPicture("penguinSign.png",90,104,13,6,8,4,0.00,0.02,0.03,-0.01);
+    displayMenuPicture("Images/igloo.png",388,237,7,2,4,2,0.05,0.30,0.01,-0.06);
+    displayMenuPicture("Images/penguin.png",142,228,2,3,1,3,0.40,0.20,-0.01,-0.05);
+    displayMenuPicture("Images/penguinSign.png",90,104,13,6,8,4,0.00,0.02,0.03,-0.01);
 
-    displayMenuPicture("lion.png",307,284,10,4,7,4,0.02,0.00,-0.01,0.02);
-    displayMenuPicture("lionHouse.png",293,245,5,3,5,3,0.17,0.00,-0.05,-0.14);
-    displayMenuPicture("savannahTree.png",239,212,6,2,5,2,0.01,0.01,0.07,0.05);
-    displayMenuPicture("lionsSign.png",99,100,7,6,6,6,0.00,0.01);
+    displayMenuPicture("Images/lion.png",307,284,10,4,7,4,0.02,0.00,-0.01,0.02);
+    displayMenuPicture("Images/lionHouse.png",293,245,5,3,5,3,0.17,0.00,-0.05,-0.14);
+    displayMenuPicture("Images/savannahTree.png",239,212,6,2,5,2,0.01,0.01,0.07,0.05);
+    displayMenuPicture("Images/lionsSign.png",99,100,7,6,6,6,0.00,0.01);
 
 
     if (!canvasSupport())

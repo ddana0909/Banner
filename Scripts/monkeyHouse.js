@@ -1,7 +1,3 @@
-/**
- * Created by Dana on 01/02/14.
- */
-
 //<reference path="scripts/basic.js"/>
 //<reference path="scripts/shapeGame.js"/>
 
@@ -22,9 +18,9 @@ function monkeyHouse()
     context.fillStyle = "#ff0000";
     context.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
-    displayMenuPicture("welcomeMonkey.png",387,111,3,3,1,1,0.05,0.05);
-    displayMenuPicture("shapes.jpg",1722,1210,4 ,3,1,2,0.05,0.05);
-    displayMenuPicture("arrowLeft.png",48,48,20,10,1,10,0.00,0.00);
+    displayMenuPicture("Images/welcomeMonkey.png",387,111,3,3,1,1,0.05,0.05);
+    displayMenuPicture("Images/shapes.jpg",1722,1210,4 ,3,1,2,0.05,0.05);
+    displayMenuPicture("Images/arrowLeft.png",48,48,20,10,1,10,0.00,0.00);
 
 
 }
