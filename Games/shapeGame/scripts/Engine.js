@@ -142,6 +142,7 @@ Circle.prototype.move = function (newX, newY) {
 };
 function drawCircle()
 {
+
     var context=getCanvasContext(this.canvasName);
     context.beginPath();
     context.strokeStyle = this.color;
@@ -149,6 +150,7 @@ function drawCircle()
     context.arc(this.positionOnX, this.positionOnY, this.width, 0, (Math.PI/180)*360, false);
     context.stroke();
     context.closePath();
+
     if(this.fillColor)
     {
         context.fillStyle=this.fillColor;
@@ -315,7 +317,7 @@ function getSettingsForGrid( canvasName,gridMarginLeft,gridMarginTop, gridColumn
     return {height: height, width: width, positionOnX: positionOnX, positionOnY: positionOnY};
 }
 
-function displayPicture(canvasName,source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop,shiftOnX)
+function displayPicture(canvasName,source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop,shiftOnX,callback)
 {
     var context = getCanvasContext(canvasName);
 
@@ -335,8 +337,43 @@ function displayPicture(canvasName,source, width, height, gridColumns, gridRows,
     imageToDisplay.onload = function ()
     {
         context.drawImage(imageToDisplay, positionOnX, positionOnY, width, height);
+        if(callback!=null)
+        callback();
     }
 }
+
+function displayPicturePercent(canvasName,source,width,height,percX,percY,percW,percH)
+{
+    var canvas= document.getElementById(canvasName);
+    var context = getCanvasContext(canvasName);
+    var w= canvas.width;
+    var h=canvas.height;
+    var posX=percX*w;
+    var posY=percY*h;
+    var aspectR=width/height;
+    if(percW*w<width)
+    {
+        width=percW*w;
+        height=width/aspectR;
+    }
+    if(percH*h<height)
+    {
+        height=percH*h;
+        width=height*aspectR;
+    }
+
+    var imageToDisplay = new Image();
+    imageToDisplay.src = source;
+    imageToDisplay.id = source;
+    imageToDisplay.onload = function ()
+    {
+        context.drawImage(imageToDisplay, posX, posY, width, height);
+    }
+
+
+}
+
+
 
 function getShapeModel(shapeModel, randomNumber)
 {
@@ -379,7 +416,7 @@ switch (randomNumber)
         var cSettings= getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
         cSettings.positionOnX+=cSettings.width/2;
         cSettings.positionOnY+=cSettings.width/2;
-        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "FBB829");
+        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "#FBB829");
         shapeModel.push(circle);
 
         var sSettings= getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
@@ -392,7 +429,7 @@ switch (randomNumber)
         var rSettings = getSettingsForGrid("canvas",0.05,0.01,3,3,150,150,2,2);
         rSettings.height/=3;
         rSettings.positionOnY+=cSettings.width;
-        var rectangle= new Rectangle("canvas",  rSettings.width, rSettings.height,rSettings.positionOnX, rSettings.positionOnY, "black", "FBB829");
+        var rectangle= new Rectangle("canvas",  rSettings.width, rSettings.height,rSettings.positionOnX, rSettings.positionOnY, "black", "#FBB829");
         shapeModel.push(rectangle);
 
         var rvSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
@@ -413,13 +450,11 @@ switch (randomNumber)
     case 2:
     {
         var sSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
-        sSettings.width/=3;
+        sSettings.width/=2;
         var square=new Square("canvas",sSettings.width,sSettings.width,sSettings.positionOnX, sSettings.positionOnY,"black","#FBB829");
         shapeModel.push(square);
 
         var tSettings=getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
-        tSettings.width/=2;
-        tSettings.height/=1.5;
         tSettings.positionOnX+=sSettings.width+tSettings.width/2+4;
         tSettings.positionOnY-=(tSettings.height-sSettings.width);
         var triangle= new Triangle("canvas",tSettings.positionOnX ,tSettings.positionOnY,tSettings.height,tSettings.width,"black","#FBB829");
@@ -427,16 +462,16 @@ switch (randomNumber)
 
         var rSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
         rSettings.width=tSettings.width+sSettings.width+4;
-        rSettings.height/=3;
+        rSettings.height/=2;
         rSettings.positionOnY+=sSettings.width+3;
-        var rectangle= new Rectangle("canvas",  rSettings.width, rSettings.height,rSettings.positionOnX, rSettings.positionOnY, "black", "FBB829");
+        var rectangle= new Rectangle("canvas",  rSettings.width, rSettings.height,rSettings.positionOnX, rSettings.positionOnY, "black", "#FBB829");
         shapeModel.push(rectangle);
 
         var cSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
         cSettings.width=(rSettings.height-4);
         cSettings.positionOnX=rSettings.positionOnX+rSettings.width/2;
         cSettings.positionOnY=rSettings.positionOnY+cSettings.width/2+2;
-        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "FBB829");
+        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "#FBB829");
         shapeModel.push(circle);
 
         var vrSettings= getSettingsForGrid("canvas", 0.05,0.01,3,3,150,150,2,2);
@@ -478,7 +513,7 @@ switch (randomNumber)
         cSettings.width=tSettings.height/2;
         cSettings.positionOnX=tSettings.positionOnX;
         cSettings.positionOnY=tSettings.positionOnY-cSettings.width/2-3;
-        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "FBB829");
+        var circle= new Circle("canvas",cSettings.positionOnX, cSettings.positionOnY, cSettings.width/2,"black", "#FBB829");
         shapeModel.push(circle);
 
         break;
@@ -488,28 +523,37 @@ switch (randomNumber)
 }
 }
 
-function centerText(message, canvas)
+function centerText(message, positionX)
 {
     var context=canvas.getContext("2d");
     var metrics=context.measureText(message);
     var messageSize=metrics.width;
-    return (canvas.width/2)-(messageSize/2);
+    return positionX-(messageSize/2);
 
 }
 
-function writeText(message,positionOnX,fontSize,positionOnY)
+function textPerc(canvasName,message,percX,percY,percFont)
+{
+
+    var canvas= document.getElementById(canvasName);
+    var context = getCanvasContext(canvasName);
+    var w= canvas.width;
+    var h=canvas.height;
+
+    var posX=w*percX;
+    var posY=h*percY;
+    var font=Math.floor(percFont*h);
+    writeText(message,posX,posY,font);
+}
+
+function writeText(message,positionOnX,positionOnY,fontSize)
 {
     var canvas = document.getElementById("canvas");
     var context = getCanvasContext("canvas");
     context.fillStyle = "#000000";
     context.font = fontSize +"px _sans";
     context.textBaseline = "top";
-
-    var position;
-    if(positionOnY)
-        position=positionOnY;
-    else
-        position = centerText(message, canvas);
-    context.fillText(message, position, positionOnX);
+    positionOnX=centerText(message,positionOnX);
+    context.fillText(message, positionOnX, positionOnY);
 }
 

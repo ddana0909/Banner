@@ -71,10 +71,33 @@ function displayMenuPicture(source, width, height, gridColumns, gridRows, gridCo
     {
         shapesGame  = new CanvasImage(source, positionOnX, positionOnY, width, height);
     }
-
     if(source=="Images/DragBoxes.jpg")
     {
-        countingGame =new CanvasImage(source,positionOnX,positionOnY,width,height);
+        draggingGame =new CanvasImage(source,positionOnX,positionOnY,width,height);
+    }
+    if(source=="Images/memory.jpg")
+    {
+        memoryGame= new CanvasImage(source,positionOnX,positionOnY,width,height);
+    }
+    if(source=="Images/counting.jpg")
+    {
+        countingGame= new CanvasImage(source,positionOnX,positionOnY,width,height);
+    }
+    if(source=="Images/drawing.jpg")
+    {
+        drawingApp= new CanvasImage(source,positionOnX,positionOnY,width,height);
+    }
+    if(source=="Images/music.jpg")
+    {
+        musicGame= new CanvasImage(source,positionOnX,positionOnY,width,height);
+    }
+    if(source=="Images/writing.jpg")
+    {
+        writingGame= new CanvasImage(source,positionOnX,positionOnY,width,height);
+    }
+    if(source=="Images/letters.jpg")
+    {
+        hooverGame= new CanvasImage(source,positionOnX,positionOnY,width,height);
     }
 	return;
 }
@@ -97,5 +120,10 @@ function centerPictureOnX(pictureWidth)
     return (window.innerWidth) / 2 - (pictureWidth / 2);
 }
 
+function isInside(image, x,y)
+{
+    return (x>=image.positionOnX && x<=image.positionOnX+image.width&&
+        y>=image.positionOnY&& y<=image.positionOnY+image.height)
+}
 
 

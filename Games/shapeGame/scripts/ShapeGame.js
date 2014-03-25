@@ -1,6 +1,5 @@
 //<reference path="scripts/engine.js"/>
 
-
 function touchHandler(event)
 {
     var touches = event.changedTouches,
@@ -54,7 +53,7 @@ function OnResize()
     shapeGame("canvas");
     return;
 }
-var canvasAspectRatio=2.5;
+var canvasAspectRatio=2;
 var draggedShape;
 var shapeMenu = [];
 var shapeModel = [];
@@ -92,25 +91,25 @@ function initShapeSounds()
 function initShapeMenu(shapeMenu, canvasName) {
     clearArray(shapeMenu);
 
-    var settings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 50, 50, 4, 7);
-    var square = new Square(canvasName, settings.width, settings.height, settings.positionOnX, settings.positionOnY, "black", "#8A9B0F");
+    var settings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 60, 60, 4, 7);
+    var square = new Square(canvasName, settings.width, settings.height, settings.positionOnX, settings.positionOnY, "black", "#A25EA6");
     shapeMenu.push(square);
 
-    var cSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 50, 50, 6, 7);
-    var circle = new Circle(canvasName, cSettings.positionOnX + cSettings.width / 2, cSettings.positionOnY + cSettings.width / 2, cSettings.width / 2, "black", "#8A9B0F");
+    var cSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 60, 60, 6, 7);
+    var circle = new Circle(canvasName, cSettings.positionOnX + cSettings.width / 2, cSettings.positionOnY + cSettings.width / 2, cSettings.width / 2, "black", "#A25EA6");
     shapeMenu.push(circle);
 
 
-    var tSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 50, 50, 8, 7);
-    var triangle = new Triangle(canvasName, tSettings.positionOnX, tSettings.positionOnY, tSettings.height, tSettings.width, "black", "#8A9B0F");
+    var tSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 60, 60, 8, 7);
+    var triangle = new Triangle(canvasName, tSettings.positionOnX, tSettings.positionOnY, tSettings.height, tSettings.width, "black", "#A25EA6");
     shapeMenu.push(triangle);
 
-    var rSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 50, 80, 10, 7);
-    var rectangle = new Rectangle(canvasName, rSettings.width, rSettings.height, rSettings.positionOnX, rSettings.positionOnY, "black", "#8A9B0F");
+    var rSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 60, 90, 10, 7);
+    var rectangle = new Rectangle(canvasName, rSettings.width, rSettings.height, rSettings.positionOnX, rSettings.positionOnY, "black", "#A25EA6");
     shapeMenu.push(rectangle);
 
-    var rvSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 80, 50, 12, 7);
-    var vRectangle = new VRectangle(canvasName, rvSettings.width, rvSettings.height, rvSettings.positionOnX, rvSettings.positionOnY, "black", "#8A9B0F");
+    var rvSettings = getSettingsForGrid(canvasName, 0.05, 0.01, 15, 7, 90, 60, 12, 7);
+    var vRectangle = new VRectangle(canvasName, rvSettings.width, rvSettings.height, rvSettings.positionOnX, rvSettings.positionOnY, "black", "#A25EA6");
     shapeMenu.push(vRectangle);
 }
 
@@ -118,59 +117,45 @@ function initShapeMenu(shapeMenu, canvasName) {
 function shapeGame(canvasName) {
 
     if(snd){snd.pause();}
-
     if (!canvasSupport())
-        return;
+    return
+        var context = getCanvasContext("canvas");
+    var canvas = document.getElementById("canvas");
 
-    var context=getCanvasContext("canvas");
-    var canvas=document.getElementById("canvas");
+    canvas.style.backgroundImage="url('Games/shapeGame/images/19.png')";
+    canvas.style.backgroundSize="100% 100%";
+
     context.clearRect(0, 0, canvas.width, canvas.height);
-
-    window.removeEventListener("resize",OnResizeMonkeyHouse, false);
-    window.removeEventListener("click",BackToGames,false);
-    window.removeEventListener("click",OnClickMonkeyHouse,false);
-    window.removeEventListener("click",OnClickHome,false);
-
+    window.removeEventListener("resize", OnResizePenguinHouse, false);
+    window.removeEventListener("click", BackToGames, false);
+    window.removeEventListener("click", OnClickPenguinHouse, false);
+    window.removeEventListener("click", OnClickHome, false);
     window.addEventListener("resize", OnResize, false);
     //add toucheventlisteners
     initTouch();
-
-    score=0;
-    matchingAttempts=0;
-
-
+    score = 0;
+    matchingAttempts = 0;
     //play instructions
     snd = new Audio("Games/shapeGame/sounds/instructions.wav");
     snd.play();
-
-
     clearArray(shapeSounds);
     initShapeSounds();
-
-
     canvasInit(canvasName, canvasAspectRatio);
-
     initShapeMenu(shapeMenu, canvasName);
     var randGameNumber;
-
-     do{
-           randGameNumber=Math.floor((Math.random()*10)+1)%3;
-       }
-    while(randGameNumber==prevRand);
-    prevRand=randGameNumber;
-    getShapeModel(shapeModel,randGameNumber);
-
+    do {
+        randGameNumber = Math.floor((Math.random() * 10) + 1) % 3;
+    }
+    while (randGameNumber == prevRand);
+    prevRand = randGameNumber;
+    getShapeModel(shapeModel, randGameNumber);
     drawShapeArray(shapeMenu);
     drawShapeArray(shapeModel);
 
-    displayPicture(canvasName, "Games/shapeGame/images/lionface.png", 792, 1009, 15, 4, 1, 4, 0.01, 0.01);
-
+    displayPicture("canvas", "Games/shapeGame/images/peng.png", 200, 212, 8, 4, 1, 3, 0.05, 0.05);
     displayMenuPicture("Images/arrowLeft.png", 48, 48, 20, 10, 1, 1, 0.00, 0.00);
-
-
     var canvas = document.getElementById(canvasName);
     canvas.addEventListener("mousedown", mouseDownEvent, false);
-
 }
 
 function gameOver()
@@ -184,7 +169,7 @@ function winGame()
 
     for (var shape in shapeModel)
     {
-        if (shapeModel[shape].fillColor != "#8A9B0F")
+        if (shapeModel[shape].fillColor != "#A25EA6")
             return false;
     }
     return true;
@@ -207,7 +192,7 @@ function mouseDownEvent(event) {
         //removeTouchEvents
         removeTouch();
 
-        monkeyHouse();
+        penguinHouse();
         return;
     }
 
@@ -283,6 +268,8 @@ function mouseDownEvent(event) {
 
 function onTimerTick()
 {
+    if(draggedShape.positionOnX + easeAmount * (targetX - draggedShape.positionOnX)>0.2*canvas.width&&
+        draggedShape.positionOnX + easeAmount * (targetX - draggedShape.positionOnX)<0.90*canvas.width)
     draggedShape.move(draggedShape.positionOnX + easeAmount * (targetX - draggedShape.positionOnX), draggedShape.positionOnY + easeAmount * (targetY - draggedShape.positionOnY));
 
     if ((!hit) && (Math.abs(draggedShape.positionOnX - targetX) < 0.1) && (Math.abs(draggedShape.positionOnY - targetY) < 0.1))
@@ -305,7 +292,6 @@ function BackToGames(event)
     {
         window.removeEventListener("click",BackToGames);
 
-
         shapeGame("canvas");
         return;
 
@@ -317,8 +303,9 @@ function gameOverScreen(context, canvas)
 {
     var canvas=document.getElementById("canvas");
     removeTouch();
-    window.removeEventListener("click",OnClickMonkeyHouse,false);
+    window.removeEventListener("click",OnClickPenguinHouse,false);
     window.removeEventListener("click",OnClickLionHouse,false);
+    window.removeEventListener("click",OnClickMonkeyHouse,false);
     window.removeEventListener("mousedown",mouseDownEvent,false);
     window.removeEventListener("click",OnClickHome,false);
     window.removeEventListener("mouseup", mouseUpEvent,false);
@@ -329,20 +316,18 @@ function gameOverScreen(context, canvas)
     snd= new Audio("Games/shapeGame/sounds/gameOver.wav");
     snd.play();
 
-    displayPicture("canvas", "Games/shapeGame/images/lose.png", 197, 164, 1, 1, 1, 1, 0.05, 0.05);
+    //displayPicture("canvas", "Games/shapeGame/images/lose.png", 197, 164, 1, 1, 1, 1, 0.05, 0.05);
+    displayPicture("canvas", "Games/shapeGame/images/SadP.png", 400, 321, 1, 2, 1, 2, 0.05, 0.05);
     displayMenuPicture("Images/arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
 
 
     var message = "GAME OVER!!!";
-    writeText(message,50,40);
-    writeText(score,120,40);
-
+    textPerc("canvas",message,0.5,0.1,0.08);
+    textPerc("canvas",score,0.5,0.2,0.08);
     updateScore(score);
-
-    displayPicture("canvas","Games/shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05,45);
-
-
-   window.addEventListener("click",BackToGames,false);
+    displayPicturePercent("canvas","Games/shapeGame/images/coin.png",98,96,0.52,0.20,0.08,0.08);
+    //displayPicture("canvas","Games/shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05,45);
+    window.addEventListener("click",BackToGames,false);
 
     return;
 }
@@ -351,6 +336,7 @@ function winScreen(context, canvas)
     removeTouch();
     window.removeEventListener("click",OnClickMonkeyHouse,false);
     window.removeEventListener("click",OnClickLionHouse,false);
+    window.removeEventListener("click",OnClickPenguinHouse,false)
     window.removeEventListener("mousedown",mouseDownEvent,false);
     window.removeEventListener("mouseup", mouseUpEvent,false);
     window.removeEventListener("click",OnClickHome,false);
@@ -361,16 +347,18 @@ function winScreen(context, canvas)
     var snd= new Audio("Games/shapeGame/sounds/wellDone.wav");
     snd.play();
 
-    displayPicture("canvas", "Games/shapeGame/images/win.png", 288, 175, 1, 1, 1, 1, 0.05, 0.05);
+      displayPicture("canvas", "Games/shapeGame/images/happy.png", 444, 322, 1, 1, 1, 1, 0.05, 0.05);
+    //displayPicture("canvas", "Games/shapeGame/images/win.png", 288, 175, 1, 1, 1, 1, 0.05, 0.05);
+
     displayMenuPicture("Images/arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
 
     var message = "Well done!!!";
-    writeText(message,50,40);
-    writeText(score,100,40);
-
+    textPerc("canvas",message,0.5,0.1,0.08);
+    textPerc("canvas",score,0.5,0.2,0.08);
+    displayPicturePercent("canvas","Games/shapeGame/images/coin.png",98,96,0.53,0.20,0.08,0.08);
     updateScore(score);
 
-    displayPicture("canvas","Games/shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05,45);
+    //displayPicture("canvas","Games/shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05,45);
     window.addEventListener("click",BackToGames,false);
     return;
 }
@@ -396,15 +384,19 @@ function drawScreen() {
     }
     else {
         context = getCanvasContext("canvas");
-        context.clearRect(115, 0, canvas.width - 115, canvas.height);
+        context.clearRect(0.19*canvas.width, 0 , 0.76*canvas.width, canvas.height);
 
-        var message = "SCORE: " + score;
-        writeText(message,50,20,canvas.width*0.80);
-        drawShapeArray(shapeMenu);
-        drawShapeArray(shapeModel);
 
-        if (hit == true)
-            draggedShape.draw();
+            var message = "SCORE: " + score;
+
+            textPerc("canvas",message,0.89,0.06,0.05);
+            displayPicturePercent("canvas","Games/shapeGame/images/coin.png",98,96,0.95,0.05,0.06,0.06);
+            drawShapeArray(shapeMenu);
+            drawShapeArray(shapeModel);
+
+            if (hit == true)
+                draggedShape.draw();
+
     }
 }
 

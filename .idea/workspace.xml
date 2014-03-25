@@ -1,98 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js" line="153" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="39cd7bd8-ca53-4e33-8daa-cc740a2f354d" name="Default" comment="resize on game without progress save&#10;">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Games\shapeGame\images\lose.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\counting.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\lion.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\monkey.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\Images\penguin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\images\win.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\doorbell.wav" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\song1.ogg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\song1.wav" afterPath="" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\.idea\Banner Prototype.iml" afterPath="$PROJECT_DIR$/.idea/Banner.iml" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\DragBoxes.jpg" afterPath="$PROJECT_DIR$/Images/DragBoxes.jpg" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\arrowLeft.png" afterPath="$PROJECT_DIR$/Images/arrowLeft.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\basic.js" afterPath="$PROJECT_DIR$/Scripts/basic.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\A.png" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/A.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\BigSquare.js" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/BigSquare.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\BigSquare.js.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/BigSquare.js.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\dragme.html" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/dragme.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\dragme.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/dragme.html.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\makeSquareBig.html" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/makeSquareBig.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\makeSquareBig.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/makeSquareBig.html.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\drag n drop square\moveimage.txt" afterPath="$PROJECT_DIR$/Games/edu_centre/drag n drop square/moveimage.txt" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\DrageNdropK2.html" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/DrageNdropK2.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\DrageNdropK2.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/DrageNdropK2.html.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Dragging_Java_script.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Dragging_Java_script.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Dragging_Java_script.js.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Dragging_Java_script.js.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Dragging_Java_script.js.bak.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Dragging_Java_script.js.bak.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\Engine.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/Engine.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\ShapeGame.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/ShapeGame.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Scripts\modernizr-latest.js" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Scripts/modernizr-latest.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\applause_y.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/applause_y.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\crank-1.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/crank-1.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\doorbell.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/doorbell.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\fail-buzzer-04.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/fail-buzzer-04.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\monkey2.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/monkey2.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\Sounds\slide_whistle_up.wav" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/Sounds/slide_whistle_up.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\images\backgroun2.jpg" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/images/backgroun2.jpg" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\images\background.jpg" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/images/background.jpg" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\dragging_game\images\cupcake.jpg" afterPath="$PROJECT_DIR$/Games/edu_centre/dragging_game/images/cupcake.jpg" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\fallingLetter.html" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/fallingLetter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\fallingLetter.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/fallingLetter.html.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\images\A.png" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/images/A.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\images\enemy.png" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/images/enemy.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\index.html" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/index.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\index.html.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/index.html.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\jquery.hotkeys.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/jquery.hotkeys.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\jquery.hotkeys.js.bak" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/jquery.hotkeys.js.bak" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\key_status.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/key_status.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\sound.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/sound.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\sprite.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/sprite.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\javascripts\util.js" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/javascripts/util.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\edu_centre\fallingLetter\stylesheets\screen.css" afterPath="$PROJECT_DIR$/Games/edu_centre/fallingLetter/stylesheets/screen.css" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\home.js" afterPath="$PROJECT_DIR$/Scripts/home.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\igloo.png" afterPath="$PROJECT_DIR$/Images/igloo.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lion.png" afterPath="$PROJECT_DIR$/Images/lion.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lionHouse.js" afterPath="$PROJECT_DIR$/Scripts/lionHouse.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lionHouse.png" afterPath="$PROJECT_DIR$/Images/lionHouse.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\lionsSign.png" afterPath="$PROJECT_DIR$/Images/lionsSign.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\modernizr-latest.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/modernizr-latest.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkey.png" afterPath="$PROJECT_DIR$/Images/monkey.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkeyHouse.js" afterPath="$PROJECT_DIR$/Scripts/monkeyHouse.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkeyHouse.png" afterPath="$PROJECT_DIR$/Images/monkeyHouse.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\monkeySign.png" afterPath="$PROJECT_DIR$/Images/monkeySign.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\palm.png" afterPath="$PROJECT_DIR$/Images/palm.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\penguin.png" afterPath="$PROJECT_DIR$/Images/penguin.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\penguinHouse.js" afterPath="$PROJECT_DIR$/Scripts/penguinHouse.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\penguinSign.png" afterPath="$PROJECT_DIR$/Images/penguinSign.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\planet.png" afterPath="$PROJECT_DIR$/Images/planet.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\savannahTree.png" afterPath="$PROJECT_DIR$/Images/savannahTree.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\images\coin.gif" afterPath="$PROJECT_DIR$/Games/shapeGame/images/coin.gif" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\images\lionface.png" afterPath="$PROJECT_DIR$/Games/shapeGame/images/lionface.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\php\score.php" afterPath="$PROJECT_DIR$/Games/shapeGame/php/score.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\Engine.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\ShapeGame.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\jquery-1.11.0.min.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/jquery-1.11.0.min.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\scripts\modernizr-latest.js" afterPath="$PROJECT_DIR$/Scripts/modernizr-latest.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\circle.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/circle.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\gameOver.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/gameOver.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\instructions.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/instructions.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\rectangle.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/rectangle.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\square.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/square.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\triangle.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/triangle.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\sounds\wellDone.wav" afterPath="$PROJECT_DIR$/Games/shapeGame/sounds/wellDone.wav" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapeGame\style\bootstrap.css" afterPath="$PROJECT_DIR$/Games/shapeGame/style/bootstrap.css" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\shapes.jpg" afterPath="$PROJECT_DIR$/Images/shapes.jpg" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\styles.css" afterPath="$PROJECT_DIR$/Style/styles.css" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\welcomeLion.png" afterPath="$PROJECT_DIR$/Images/welcomeLion.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\welcomeMonkey.png" afterPath="$PROJECT_DIR$/Images/welcomeMonkey.png" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Banner\welcomePenguin.png" afterPath="$PROJECT_DIR$/Images/welcomePenguin.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/banner.html" afterPath="$PROJECT_DIR$/banner.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/1.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/10.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/2.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/3.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/4.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/5.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530604f8d13d4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/5306050688241.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530607d3602f5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/53060881c6548.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/5306089f65a05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530608a5a6cf1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530608b996dca.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530611c84d592.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530612f8199d8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530615d178591.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/53061d94dd5ff.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/5306649fa769a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530689d492331.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/53077739c0974.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/530778ca69e44.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/6.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/7.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/8.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/9.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/images/A.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/A.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/B.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/BackGround.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/C.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/Cupcake.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/D.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/E.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/F.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/G.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/Good_Job.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/Good_Job.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/H.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/Hoover_BackGround.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/Hover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/Hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/I.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/J.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/K.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/L.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/M.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/N.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/O.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/O_no.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/O_no.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/P.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/Q.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/R.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/S.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/SadP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/T.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/U.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/V.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/X.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/Y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/Z.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/alphabet.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/sounds/applause.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/applause_y.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/backgroun2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/images/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/backgroundMain.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/images/ball.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/images/ball.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/images/balll.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/basket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/basket2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/sounds/beer_can_opening.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/sounds/beer_can_opening.ogg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/sounds/bell_ring.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/sounds/bell_ring.ogg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/bin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/bk1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/bk2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/cardback.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/cardback.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/coin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/counting.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/crank-1.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/cupcake.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/deck.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/deck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/doorbell.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/drag-n-drop-matching-game.capx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/drawing.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/endPage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/images/enemy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/sounds/explosion.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/sounds/explosion.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/fail-buzzer-04.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/happy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/happypenguin.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/helloWorld.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/hoover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/hoover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/hoover_up_letter.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/house-forest-wallpaper-photo-tree-111358.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/how_many_are_moving.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/igloo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/igloo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/igloo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/igloo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/images/igloo_house.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/letters.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/lion - Copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/lion.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/lion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/lionsHouse.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/lionsHouse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/lionsHouse1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/lose.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/memory.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/mlion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/monkey.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/monkey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/monkey1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/monkey2.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/monkeyHouse.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/monkeyHouse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/monkeyHouse1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/music.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/pen.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/shapeGame/images/peng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/penguin.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/penguin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/images/penguin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/penguin1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/images/penguins.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/slide_whistle_up.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/images/smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/song1.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/images/startpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/win.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/writing.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/wrong_letter.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/sounds/wrong_number.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Sounds/wrong_number.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/makeBigSquare/BigSquare.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/makeBigSquare/BigSquare.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/scripts/BouncingBalls.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/BouncingBalls.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/scripts/BouncingBalls.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/BouncingBalls.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/scripts/BouncingBalls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/BouncingBalls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/DrageNdropK2.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Scripts/Dragging_Java_script.js.bak.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Scripts/Dragging_Java_script.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Scripts/Dragging_Java_script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Scripts/Engine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/Html.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Scripts/ShapeGame.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/js/SmartFunJS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/1st Square/Square1.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/1st Square/Square1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_Game.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_remove.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_remove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_remove.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_remove.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch_images.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch_images.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch_images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch_images2.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch_images2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch_images2.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/collision_touch_images2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/colors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/css/css3transition.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/download.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/1st Square/drawSquare.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/1st Square/drawSquare.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/fallingLetter.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/fallingLetter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/firstHtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/index.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/index.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/index.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/source/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/js/ion.sound.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/js/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/javascripts/jquery.hotkeys.js.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/javascripts/jquery.hotkeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/javascripts/key_status.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/makeBigSquare/makeSquareBig.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/makeBigSquare/makeSquareBig.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/master.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/modernizr-latest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Scripts/modernizr-latest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/mouse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_anim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_input.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_scenes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_sprites.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_tmx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/hoover_Game/lib/quintus_ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/radius.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/save.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/drawingApp/save.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/counting_game/scripts/score.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/dragging_game/Scripts/score.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/stylesheets/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/SmartFunMemory/css/smartFunMemoryCSS.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/javascripts/sound.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/javascripts/sprite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/games_not_completed/fallingLetter/javascripts/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Games/Guess the letter/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\A.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\BigSquare.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\BigSquare.js.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\dragme.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\dragme.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\makeSquareBig.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\makeSquareBig.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\drag n drop square\moveimage.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\DrageNdropK2.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\DrageNdropK2.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Scripts\Dragging_Java_script.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Scripts\Dragging_Java_script.js.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Scripts\Dragging_Java_script.js.bak.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Scripts\Engine.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Scripts\ShapeGame.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Scripts\modernizr-latest.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Sounds\applause_y.wav" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Sounds\crank-1.wav" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Sounds\doorbell.wav" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Sounds\fail-buzzer-04.wav" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Sounds\monkey2.wav" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\Sounds\slide_whistle_up.wav" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\images\backgroun2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\images\background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\dragging_game\images\cupcake.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\fallingLetter.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\fallingLetter.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\images\A.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\images\enemy.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\index.html.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\javascripts\jquery.hotkeys.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\javascripts\jquery.hotkeys.js.bak" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\javascripts\key_status.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\javascripts\sound.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\javascripts\sprite.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\javascripts\util.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\edu_centre\fallingLetter\stylesheets\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Games\shapeGame\images\lose.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Images\background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Images\counting.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Images\lion.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Images\monkey.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\Images\penguin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\shapeGame\images\win.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\shapeGame\sounds\doorbell.wav" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\shapeGame\sounds\song1.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\Banner\shapeGame\sounds\song1.wav" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/shapes.jpg" afterPath="$PROJECT_DIR$/Images/shapes.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js" afterPath="$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/basic.js" afterPath="$PROJECT_DIR$/Scripts/basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/lionHouse.js" afterPath="$PROJECT_DIR$/Scripts/lionHouse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/monkeyHouse.js" afterPath="$PROJECT_DIR$/Scripts/monkeyHouse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/penguinHouse.js" afterPath="$PROJECT_DIR$/Scripts/penguinHouse.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Banner Prototype.iws" />
@@ -116,39 +333,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="banner.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="banner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/banner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="66" selection-start="157" selection-end="157" vertical-scroll-proportion="0.13621795" vertical-offset="0" max-vertical-offset="624">
-              <folding>
-                <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="5" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
+            <state line="21" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="penguinHouse.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
+      <file leaf-file-name="drums.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Games/Piano/scripts/drums.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+            <state line="190" column="23" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0" vertical-offset="2580" max-vertical-offset="3689">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShapeGame.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ShapeGame.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="29" selection-start="10912" selection-end="10912" vertical-scroll-proportion="-10.2" vertical-offset="5984" max-vertical-offset="9231">
+            <state line="357" column="79" selection-start="11836" selection-end="11836" vertical-scroll-proportion="0.22222222" vertical-offset="5933" max-vertical-offset="9095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Engine.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="555" column="48" selection-start="17864" selection-end="17864" vertical-scroll-proportion="-21.76" vertical-offset="8891" max-vertical-offset="9605">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drums.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Games/Piano/drums.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="45" selection-start="593" selection-end="593" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="578">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Games/Piano/style/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Games/Piano/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="12" selection-start="407" selection-end="433" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="1428">
               <folding />
             </state>
           </provider>
@@ -187,19 +429,23 @@
         <option value="$PROJECT_DIR$/shapeGame/scripts/ShapeGame.js" />
         <option value="$PROJECT_DIR$/banner.html" />
         <option value="$PROJECT_DIR$/Scripts/home.js" />
-        <option value="$PROJECT_DIR$/Scripts/basic.js" />
-        <option value="$PROJECT_DIR$/Scripts/lionHouse.js" />
         <option value="$PROJECT_DIR$/Scripts/monkeyHouse.js" />
         <option value="$PROJECT_DIR$/Scripts/penguinHouse.js" />
+        <option value="$PROJECT_DIR$/Games/dragging_game/index.html" />
+        <option value="$PROJECT_DIR$/Games/counting_game/index.html" />
+        <option value="$PROJECT_DIR$/Scripts/lionHouse.js" />
+        <option value="$PROJECT_DIR$/Scripts/basic.js" />
+        <option value="$PROJECT_DIR$/Games/Piano/scripts/drums.js" />
+        <option value="$PROJECT_DIR$/Games/Piano/drums.html" />
         <option value="$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js" />
         <option value="$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1432" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
+    <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -296,6 +542,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WritingApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="shapeGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -318,7 +596,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,6 +611,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Piano" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Piano" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner Prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoover_Game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,12 +666,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Style" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Games/Piano" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -371,14 +697,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -389,8 +707,12 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -398,6 +720,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -486,27 +812,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="1432" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18481596" sideWeight="0.6901639" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18448023" sideWeight="0.6901639" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3091716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -544,53 +870,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Scripts/lionHouse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="808" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="0" selection-start="5723" selection-end="5723" vertical-scroll-proportion="0.0" vertical-offset="3001" max-vertical-offset="6698">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="39" selection-start="4231" selection-end="4231" vertical-scroll-proportion="0.0" vertical-offset="2704" max-vertical-offset="6630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/banner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/basic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="41" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="565" max-vertical-offset="1547" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1734" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/monkeyHouse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="3" selection-start="1055" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1105">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="52" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765" />
@@ -610,17 +889,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="375" column="8" selection-start="10637" selection-end="10637" vertical-scroll-proportion="0.0" vertical-offset="6001" max-vertical-offset="6630">
-          <folding />
-        </state>
+        <state line="375" column="8" selection-start="10637" selection-end="10637" vertical-scroll-proportion="0.0" vertical-offset="6001" max-vertical-offset="6630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="425">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -636,11 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/monkeyHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="51" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="867">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="51" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="867" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
@@ -662,17 +933,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="31" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="6443">
-          <folding />
-        </state>
+        <state line="24" column="31" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="6443" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="13" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="5236">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,9 +951,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="234" column="33" selection-start="8255" selection-end="8255" vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="5270">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,9 +963,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="234" column="33" selection-start="8255" selection-end="8255" vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="5270">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -712,9 +975,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="257" column="5" selection-start="8914" selection-end="8914" vertical-scroll-proportion="0.0" vertical-offset="4369" max-vertical-offset="4845">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -726,9 +987,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="22" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="3825">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -740,9 +999,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="43" selection-start="2703" selection-end="2703" vertical-scroll-proportion="0.0" vertical-offset="1184" max-vertical-offset="2329">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -754,9 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="72" selection-start="3314" selection-end="3314" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="2329">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,9 +1023,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="31" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="633" max-vertical-offset="2380">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,9 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="94" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="1241">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,9 +1047,7 @@
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -822,63 +1071,111 @@
         <state line="12" column="72" selection-start="393" selection-end="393" vertical-scroll-proportion="0.31384614" vertical-offset="0" max-vertical-offset="650" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/basic.js">
+    <entry file="file://$PROJECT_DIR$/Images/monkeyHouse.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+        <state line="31" column="0" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.3723077" vertical-offset="285" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/monkeyHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="1" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.84307694" vertical-offset="455" max-vertical-offset="1105">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="237" selection-end="237" vertical-scroll-proportion="-12.690738" vertical-offset="8220" max-vertical-offset="8857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/lionHouse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="31" selection-start="730" selection-end="730" vertical-scroll-proportion="0.54923075" vertical-offset="0" max-vertical-offset="884">
+        <state line="48" column="1" selection-start="1708" selection-end="1806" vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="1122">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="5" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
+        <state line="45" column="30" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/penguinHouse.js">
+    <entry file="file://$PROJECT_DIR$/Games/counting_game/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+        <state line="10" column="81" selection-start="454" selection-end="454" vertical-scroll-proportion="0.2724359" vertical-offset="0" max-vertical-offset="624">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
+    <entry file="file://$PROJECT_DIR$/Games/dragging_game/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="29" selection-start="10912" selection-end="10912" vertical-scroll-proportion="-10.2" vertical-offset="5984" max-vertical-offset="9231">
+        <state line="14" column="7" selection-start="249" selection-end="249" vertical-scroll-proportion="0.2996795" vertical-offset="51" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/lionHouse.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/lionHouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="31" selection-start="945" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/basic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="1" selection-start="3335" selection-end="3335" vertical-scroll-proportion="0.8384615" vertical-offset="1189" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/Piano/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="12" selection-start="407" selection-end="433" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/Piano/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/Piano/drums.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="45" selection-start="593" selection-end="593" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/Engine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="555" column="48" selection-start="17864" selection-end="17864" vertical-scroll-proportion="-21.76" vertical-offset="8891" max-vertical-offset="9605">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/banner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="66" selection-start="157" selection-end="157" vertical-scroll-proportion="0.13621795" vertical-offset="0" max-vertical-offset="624">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="21" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/Piano/scripts/drums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="23" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="3689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games/shapeGame/scripts/ShapeGame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="357" column="79" selection-start="11836" selection-end="11836" vertical-scroll-proportion="0.22222222" vertical-offset="5933" max-vertical-offset="9095">
+          <folding />
         </state>
       </provider>
     </entry>
