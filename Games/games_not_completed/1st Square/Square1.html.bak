@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <!-- makeing square -->
+ <script type = "application/javascript">
+ function draw()
+ {
+		var canvas = document.getElementById("canvas");
+		if (canvas.getContext)
+		{
+			var canvasContext = canvas.getContext("2d")
+			 canvasContext.fillStyle ="rgb(200,0,0)";
+			canvasContext.fillRect (10,10,55,50);
+		}
+
+ }
+
+</script>
+ </head>
+
+ <body onload= "draw();">
+ <canvas id= "canvas" width = "150" height ="150"> </canvas>
+
+
+  
+ </body>
+</html>

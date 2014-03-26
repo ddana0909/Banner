@@ -1,4 +1,4 @@
-function displayMenuPicture(source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop,dxPerc,dyPerc)
+function displayMenuPicture(source, width, height, gridColumns, gridRows, gridColumn, gridRow, gridMarginLeft, gridMarginTop,dxPerc,dyPerc,callback)
 {
     var canvas= document.getElementById("canvas");
     this.width=width;
@@ -99,6 +99,8 @@ function displayMenuPicture(source, width, height, gridColumns, gridRows, gridCo
     {
         hooverGame= new CanvasImage(source,positionOnX,positionOnY,width,height);
     }
+    if(callback!=null)
+        callback();
 	return;
 }
 

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Guess the letter </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="modernizr-latest.js"></script>
+    <script type="text/javascript">
+
+        window.addEventListener("load", eventWindowLoaded, false);
+        var Debugger = function () { };
+        Debugger.log = function (message) {
+            try {
+                console.log(message);
+            } catch (exception) {
+                return;
+            }
+        }
+        function eventWindowLoaded () {
+            canvasApp();
+        }
+        function canvasSupport () {
+            return Modernizr.canvas;
+        }
+        function canvasApp ()
+        {   var guesses=0;
+            var message;
+            var letters=new Array("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z");
+            var today=new Date();
+            var letterToGuess="";
+            var indexOfLetterToGuess;
+            var higherOrLower="";
+            var letterGuessed=new Array(); //letters he had said so far
+            var win=false; //is true when the winner winns
+            var gameover=false;
+
+            if (!canvasSupport()) {
+                return;
+            }
+            var theCanvas = document.getElementById("canvasOne");
+            var context = theCanvas.getContext("2d");
+            Debugger.log("Drawing Canvas");
+            var btnRestart=document.getElementById("restart");
+
+            initGame();
+
+            function initGame()
+            {
+                indexOfLetterToGuess=Math.floor(Math.random()*letters.length);
+                letterToGuess=letters[indexOfLetterToGuess];
+                guesses=0;
+                letterGuessed=[];
+                gameover=false;
+                win=false;
+                higherOrLower="";
+                //var canvas=document.getElementById("canvasOne");
+                window.addEventListener("keyup",eventKeyPressed,true); //(event_type, event_handler,capture)
+                drawScreen();
+                btnRestart.addEventListener("click",eventRestartGame,true);
+            }
+
+            function eventRestartGame(e)
+            {
+                var snd=new Audio("song1.mp3");
+                snd.play();
+                //initGame();
+            }
+            function eventKeyPressed(e)
+            {
+                var letterPressed=String.fromCharCode(e.keyCode);
+                letterPressed=letterPressed.toLowerCase();
+
+                if(win==false&&gameover==false)
+                {
+                    guesses++;
+                    letterGuessed.push(letterPressed);
+
+                    if(letterGuessed.length==letters.length) //deja ai cam incercat cam multe litere
+                    {
+                        gameover=true;
+                    }
+                    if(letterPressed==letterToGuess)
+                    {
+                        win=true;
+                        for(i=0;i<letterGuessed.length;i++)
+                            letterGuessed[i]=null;
+                    }
+                    else
+                    {   if(indexOfLetterToGuess<0)
+                            higherOrLower="This is not a letter";
+                       else
+                            if(indexOfLetterToGuess<letters.indexOf(letterPressed))
+                                higherOrLower="lower";
+                            else
+                                higherOrLower="higher";
+                    }
+                }
+
+                drawScreen();
+
+                }
+            function centerText(message)
+            {
+                var metrics=context.measureText(message);
+                var messageSize=metrics.width;
+                var position=(canvasOne.width/2)-(messageSize/2);
+                return position;
+            }
+            function drawCircle(x,y,radius,color) {
+                context.beginPath();
+                context.strokeStyle = color;
+                context.lineWidth = 5;
+                context.arc(x, y, radius, (Math.PI/180)*0, (Math.PI/180)*360, false);
+                context.stroke();
+                context.closePath();
+            }
+            function drawScreen() {
+
+                //background
+                context.fillStyle = "#ffffaa";
+                context.fillRect(0, 0, 500, 300);
+                //text
+                context.fillStyle = "#000000";
+                context.font = "20px _sans";
+                context.textBaseline = "top";
+
+                if(gameover==true || win==true)
+                {
+                  if(gameover==true)
+                    {context.fillStyle = "#ffffff";
+                        context.fillRect(0, 0, 500, 300);
+
+                        var youWin = new Image();
+                        youWin.src = "lose.jpg";
+                        youWin.onload = function () {
+                            context.drawImage(youWin, 140, 110);
+                        }
+                        context.fillStyle = "#000000";
+                        context.font = "20px _sans";
+                        context.textBaseline = "top";
+                        context.fillText("GAME OVER!!!!",175,80);
+                    }
+                  if(win==true)
+                  {   context.fillStyle = "#ffffff";
+                      context.fillRect(0, 0, 500, 300);
+
+                      var youWin = new Image();
+                      youWin.src = "images.jpg";
+                      youWin.onload = function () {
+                          context.drawImage(youWin, 120, 110);
+                      }
+                      context.fillStyle = "#000000";
+                      context.font = "20px _sans";
+                      context.textBaseline = "top";
+
+                      //center your message
+                      var message="Congrats.You guessed the letter in "+guesses+" guesses."
+                      var position=centerText(message);
+                      context.fillText(message,position,50);
+
+                      message="The letter was: "+letterToGuess.toLocaleUpperCase();
+                      position=centerText(message);
+                      context.fillText(message,position,80);
+
+                  }
+                }
+                else
+                {   context.fillStyle = "#000000";
+                    context.font = "20px _sans";
+                    context.textBaseline = "top";
+                context.fillText ("Guess the letter!", 195, 50 ); //title
+                if(letterGuessed.toString())
+                    {context.fillText(letterGuessed[letterGuessed.length-1],250,90);
+                     context.fillText("Letter you've already tried",20,240);
+                    }
+                    //context.fillText("letter to guess: "+letterToGuess,195,260)
+                context.fillText(letterGuessed.toString(),20,260);
+                if(higherOrLower=="higher")
+                    drawCircle(250,190,40,"red");
+                if(higherOrLower=="lower")
+                       drawCircle(250,190,40,"Blue");
+
+                 context.fillText(higherOrLower,225,180);  //higher or lower
+                }
+                //box
+                context.strokeStyle = "#000000";
+                context.strokeRect(5, 5, 490, 290);
+
+            }
+            function drawRect(x,y)
+            {context.fillStyle="#FBB829"
+             context.fillRect(x,y,50,50);
+            }
+        }
+        function allowDrop(ev)
+        {
+            ev.preventDefault();
+        }
+
+        function drag(ev)
+        {
+            ev.dataTransfer.setData("Text",ev.target.id);
+        }
+
+        function drop(ev)
+        {
+            ev.preventDefault();
+            var data=ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+<div style="position: absolute; top: 50px; left: 50px;">
+    <canvas id="canvasOne" width="500" height="300">
+        Your browser does not support HTML5 Canvas.
+    </canvas>
+    <div>
+        <button type="button" id="restart" class="btn btn-default btn-block" width="500">Restart</button>
+    </div>
+
+
+</div>
+</body>
+
+</html>

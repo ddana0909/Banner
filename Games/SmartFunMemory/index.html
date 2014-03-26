@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset='utf-8'>
+<title>SmartFun Memory Game</title>
+<link rel="stylesheet" href="css/smartFunMemoryCSS.css" />
+</head>
+<body>
+<section id="gameStats">
+			<p id="timer">Scores: <span class="gameScore"></span></p>
+			<p id="reset"><a class="gameReset" href="">Reset</a></p>
+</section>	
+<section id="game">
+
+					<section id="gameIntro">
+						<p><a id="gamePlay" class="button" 	href="">Play</a></p>
+					</section>
+		
+					<section id="gameComplete">
+							<p id="top">Your Score is <span class="gameScore"></span>.</p>
+							<p><a class="gameReset button" href="">Play again</a></p>
+					</section>
+					
+					<div id="cards">
+						<div class="card">
+							<div class="face front"></div>
+							<div class="face back"></div>
+						</div> <!-- .card -->
+					</div> <!-- #cards -->
+</section> <!-- #game -->
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script src="js/SmartFunJS.js"></script>
+<script src="js/ion.sound.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

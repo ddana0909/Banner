@@ -13,10 +13,6 @@ function touchHandler(event)
         default: return;
     }
 
-    //initMouseEvent(type, canBubble, cancelable, view, clickCount,
-    //           screenX, screenY, clientX, clientY, ctrlKey,
-    //           altKey, shiftKey, metaKey, button, relatedTarget);
-
     var simulatedEvent = document.createEvent("MouseEvent");
     simulatedEvent.initMouseEvent(type, true, true, window, 1,
         first.screenX, first.screenY,
@@ -142,11 +138,9 @@ function shapeGame(canvasName) {
     initShapeSounds();
     canvasInit(canvasName, canvasAspectRatio);
     initShapeMenu(shapeMenu, canvasName);
-    var randGameNumber;
-    do {
-        randGameNumber = Math.floor((Math.random() * 10) + 1) % 3;
-    }
-    while (randGameNumber == prevRand);
+   if(prevRand==null)
+        prevRand = Math.floor((Math.random() * 10) + 1) % 3;
+    var randGameNumber=(prevRand+1)%4;
     prevRand = randGameNumber;
     getShapeModel(shapeModel, randGameNumber);
     drawShapeArray(shapeMenu);
@@ -188,6 +182,7 @@ function mouseDownEvent(event) {
         window.removeEventListener("mouseup", mouseUpEvent);
         window.removeEventListener("click",OnClickHome);
         canvas.removeEventListener("mousedown", mouseDownEvent, false);
+        window.removeEventListener("resize",OnResize,false);
 
         //removeTouchEvents
         removeTouch();
@@ -291,7 +286,6 @@ function BackToGames(event)
         && y >= arrowBackToHome.positionOnY && y <= arrowBackToHome.positionOnY + arrowBackToHome.height)
     {
         window.removeEventListener("click",BackToGames);
-
         shapeGame("canvas");
         return;
 
@@ -347,7 +341,7 @@ function winScreen(context, canvas)
     var snd= new Audio("Games/shapeGame/sounds/wellDone.wav");
     snd.play();
 
-      displayPicture("canvas", "Games/shapeGame/images/happy.png", 444, 322, 1, 1, 1, 1, 0.05, 0.05);
+      displayPicture("canvas", "Games/shapeGame/images/happy.png", 444, 322, 1, 2, 1, 2, 0.05, 0.05);
     //displayPicture("canvas", "Games/shapeGame/images/win.png", 288, 175, 1, 1, 1, 1, 0.05, 0.05);
 
     displayMenuPicture("Images/arrowLeft.png", 48, 48, 20, 10, 1, 10, 0.00, 0.00);
@@ -355,7 +349,7 @@ function winScreen(context, canvas)
     var message = "Well done!!!";
     textPerc("canvas",message,0.5,0.1,0.08);
     textPerc("canvas",score,0.5,0.2,0.08);
-    displayPicturePercent("canvas","Games/shapeGame/images/coin.png",98,96,0.53,0.20,0.08,0.08);
+    displayPicturePercent("canvas","Games/shapeGame/images/coin.png",98,96,0.54,0.20,0.08,0.08);
     updateScore(score);
 
     //displayPicture("canvas","Games/shapeGame/images/coin.gif",300,300,1,10,1,3,0.05,0.05,45);

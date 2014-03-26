@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src='http://cdn.html5quintus.com/v0.1.1/quintus-all.min.js'></script>
+    <script src='BouncingBalls.js'></script>
+	<script src='counting_game\scripts\score.php'></script>
+	 
+  </head>
+   <body  background="images/background.jpg";>
+   <canvas id='GameStatus' style="z-index:1; position:absolute; top:25; left:0"" width='400' height='100'>
+   </canvas>
+   <canvas id='GameDisplay' style="z-index:1; position:absolute; top:50; left:50"" width='200' height='200'></canvas>
+   <button onclick="Check(GameStatus,1)" style="z-index:2; position:absolute; top:130; left:150">1</button>
+   <button onclick="Check(GameStatus,2)" style="z-index:2; position:absolute; top:160; left:150">2</button>
+   <button onclick="Check(GameStatus,3)" style="z-index:2; position:absolute; top:190; left:150">3</button>
+   <button onclick="Check(GameStatus,4)" style="z-index:2; position:absolute; top:220; left:150">4</button>
+   <button onclick="Check(GameStatus,5)" style="z-index:2; position:absolute; top:250; left:150">5</button>
+   <button onclick="Check(GameStatus,6)" style="z-index:2; position:absolute; top:280; left:150">6</button>
+   <button onclick="Check(GameStatus,7)" style="z-index:2; position:absolute; top:310; left:150">7</button>
+   <button onclick="Check(GameStatus,8)" style="z-index:2; position:absolute; top:340; left:150">8</button>
+   <button onclick="Check(GameStatus,9)" style="z-index:2; position:absolute; top:370; left:150">9</button>
+   <button onclick="Check(GameStatus,10)" style="z-index:2; position:absolute; top:400; left:150">10</button>
+   <button onclick="Play()" style="z-index:2; position:absolute; top:150; left:50">Play</button>
+   <button onclick="Pause()" style="z-index:2; position:absolute; top:180; left:50">Pause</button>
+   <button onclick="ResetGame()" style="z-index:2; position:absolute; top:210; left:50">Reset</button>
+   
+  
+   </body>
+</html>

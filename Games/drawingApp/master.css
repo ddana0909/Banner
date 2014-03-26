@@ -1,0 +1,117 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: sans-serif;
+	user-select:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	cursor:default;
+}
+#toolbar{
+	width:100%;
+	height:50px;
+	padding:5px 10px 5px 10px;
+	position:fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	vertical-align:middle;
+}
+.radcontrol {
+	width:30px;
+	height:30px;
+	background-color:#414141;
+	display: inline-block;
+	text-align:center;
+	padding:5px;
+}
+#circle {
+	width: 30px;
+	height: 30px;
+	border-radius:15px;
+display:inline-block;
+	margin-left:10px;
+	color:transparent;
+	background-color:red;
+}
+#square {
+	width: 30px;
+	height: 30px;
+
+display:inline-block;
+	margin-left:10px;
+	color:transparent;
+	background-color:blue;
+	border-radius:0px !important;
+}
+#rad {
+	float:left;
+}
+#shapes {
+	float:left;
+	margin-left:20px;
+	border-left:1px solid white;
+}
+#colors {
+	float:left;
+		margin-left:20px;
+	border-left:1px solid white;
+}
+.shape {
+	width: 30px;
+	height: 30px;
+	border-radius:30px;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 2px 0px rgba(0,0,0,0.5);
+	display:inline-block;
+	margin-left:10px;
+	color:transparent;
+}
+
+.sizer {
+	vertical-align:middle;
+	width: 30px;
+	height: 30px;
+	border-radius:30px;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 2px 0px rgba(0,0,0,0.5);
+	display:inline-block;
+	margin-left:10px;
+	color:transparent;
+
+}
+.sizer.active {
+	background: url('smile.png');
+background-size:contain;
+
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.4)
+}
+.sizer.active2 {
+	background: url('smile.png');
+background-size:contain;
+
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.4)
+}
+.active3 {
+	background: url('smile.png');
+background-size:contain;
+
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.4)
+}
+#save {
+	float:right;
+	margin-right:10px;
+	height:30px;
+	opacity:0.8;
+}
+#save:hover{
+	opacity:1;
+}
+#bin {
+	float:right;
+	margin-right:10px;
+	height:30px;
+	opacity:0.8;
+}
+#bin:hover{
+	opacity:1;
+}

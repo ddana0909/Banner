@@ -18,7 +18,7 @@ function penguinHouse()
     context.fillStyle = "#00A8C6";
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    displayMenuPicture("Images/welcomePenguin.png",739,37,1,5,1,1,0.05,0.05);
+    displayMenuPicture("Images/welcomePenguin.png",739,37,1,5,1,1,0.15,0.05);
     displayMenuPicture("Images/penguin.png",142,228,8,4,1,1,0.05,0.01);
     displayMenuPicture("Images/penguin.png",142,228,8,4,8,1,0.05,0.01);
 
